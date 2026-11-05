@@ -1,0 +1,12 @@
+# Python
+.venv/
+__pycache__/
+
+# Secrets
+.env
+
+# Data files (too big for GitHub; can always re-download them)
+data/
+
+# Frontend
+node_modules/
