@@ -1,0 +1,972 @@
+tag,products,old_rule,new_label,reason
+en:gluten,100915,wheat contains,gluten contains,"OFF's gluten tag also covers barley, rye and oats, so it's gluten only now (decided by the owner)"
+en:soy-sauce,7784,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:hydrolysed-vegetable-protein,5985,none,gluten contains; wheat contains,"unsure: source plant is not named; often wheat, but can be soy or corn"
+en:dough,5055,none,gluten contains; wheat contains,unsure: dough type not named; usually wheat
+en:crust,2396,none,gluten contains; wheat contains,"unsure: crust type not named; usually wheat (pizza, pie)"
+en:white-chocolate,1502,none,milk contains,old patterns missed it: has milk
+en:tamari,1046,none,gluten contains; wheat contains,"unsure: tamari is often wheat-free, but some brands brew it with wheat"
+en:tortilla,983,none,gluten contains; wheat contains,unsure: could be corn or flour tortilla
+en:flour-blend,539,none,gluten contains; wheat contains,unsure: blend not named; could be a gluten-free blend
+en:half-and-half,372,none,milk contains,old patterns missed it: has milk
+en:sourdough,365,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cooked-pasta,350,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:fontina,304,none,milk contains,old patterns missed it: has milk
+en:wrapper,247,none,gluten contains; wheat contains,unsure: wrapper type not named; egg roll and wonton wrappers are wheat
+en:sourdough-starter,242,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:pastry,214,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:teriyaki-sauce,213,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:pepper-jack,212,none,milk contains,old patterns missed it: has milk
+en:non-dairy-creamer,207,none,milk contains,unsure: non-dairy creamers often still have sodium caseinate from milk
+en:grana-padano,207,none,milk contains,old patterns missed it: has milk
+en:sesame-sticks,187,sesame contains,gluten contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:peanut-butter-cups,186,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:white-coating,182,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:gravy,156,none,gluten contains; wheat contains,unsure: gravy type not named; usually thickened with wheat flour
+en:vermicelli,154,none,gluten contains; wheat contains,unsure: could be wheat or rice vermicelli
+en:penne,149,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cracker-meal,148,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:battered-with,143,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:natural-and-artificial-butter-flavor,140,none,milk contains,unsure: butter flavor may or may not come from milk
+en:bun,136,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:pizza-dough,135,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:toffee,133,none,milk contains,old patterns missed it: has milk
+en:caesar-dressing,133,none,egg contains; milk contains,"unsure: Caesar dressing usually has egg and parmesan, but not every brand"
+en:surimi,126,none,egg contains; gluten contains; wheat contains,"unsure: surimi usually has wheat starch and egg white, but recipes vary"
+en:pizza-crust,124,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:ranch-dressing,122,none,egg contains; milk contains,"unsure: ranch usually has buttermilk and egg, but not every brand"
+en:cake-base,120,none,gluten contains; wheat contains,unsure: cake base not described; usually wheat
+en:croissant,119,none,gluten contains; milk contains; wheat contains,"old patterns missed it: has milk, wheat"
+en:crackermeal,119,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:nondairy-creamer,118,none,milk contains,unsure: non-dairy creamers often still have sodium caseinate from milk
+en:ranch-seasoning,117,none,milk contains,"unsure: ranch seasoning usually has buttermilk powder, but not always"
+en:chocolate-fudge,109,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:cookie-dough,107,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:biscuit-pieces,107,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:gorgonzola,101,none,milk contains,old patterns missed it: has milk
+en:hoisin-sauce,100,none,gluten contains; wheat contains,"unsure: hoisin sauce usually has wheat, but some brands are gluten-free"
+en:enriched-high-gluten-flour,99,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cake-mix,98,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:white-confectionery-coating,97,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:oyster-sauce,93,none,gluten contains; wheat contains,"unsure: oyster sauce usually has wheat flour, but some brands don't"
+en:imitation-crab,90,none,egg contains; gluten contains; wheat contains,"unsure: imitation crab usually has wheat starch and egg white, but recipes vary"
+en:honey-roasted-sesame-sticks,90,sesame contains,gluten contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:naturally-brewed-soy-sauce,85,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:alfredo-sauce,83,none,milk contains,old patterns missed it: has milk
+en:chocolate-cookies,82,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:brownie,81,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:white-chocolate-coating,78,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:pita,78,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:fudge,78,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:creme-fraiche,77,none,milk contains,old patterns missed it: has milk
+en:batter-mix,74,none,gluten contains; wheat contains,unsure: batter mix not described; usually wheat
+en:pesto,72,none,milk contains; tree nuts contains,"unsure: pesto usually has parmesan and pine nuts, but some don't"
+en:chocolate-cookie-pieces,72,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:bran,69,none,gluten contains; wheat contains,unsure: bran type not named; usually wheat
+en:pasteurized-cow-s,68,none,milk contains,old patterns missed it: has milk
+en:egg-pasta,68,egg contains,egg contains; gluten contains; wheat contains,old patterns missed it: has wheat
+en:cone,68,none,gluten contains; wheat contains,unsure: usually an ice cream cone made from wheat
+en:pasteurized-sheep-s,67,none,milk contains,old patterns missed it: has milk
+en:spicy-mayo,66,none,egg contains,old patterns missed it: has egg
+en:galactooligosaccharides,66,none,milk contains,unsure: GOS is made from milk sugar (lactose); very little milk protein is likely left
+en:lasagne,63,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sesame-seed-bun,60,sesame contains,gluten contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:brie,60,none,milk contains,old patterns missed it: has milk
+en:whipped-topping,59,none,milk contains,"unsure: whipped toppings often have sodium caseinate, but not all"
+en:havarti,59,none,milk contains,old patterns missed it: has milk
+en:chocolate-chip-cookie-dough,59,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:semisoft,58,none,milk contains,"unsure: probably cut off from ""semisoft cheese"""
+en:enriched-pasta-product,58,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:white-confection,57,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:puff-pastry,57,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:imitation-crab-meat,55,none,egg contains; gluten contains; wheat contains,"unsure: imitation crab usually has wheat starch and egg white, but recipes vary"
+en:emmental,55,none,milk contains,old patterns missed it: has milk
+en:brownie-mix,54,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:swiss,53,none,milk contains,"unsure: probably cut off from ""swiss cheese"""
+en:buttermilk-biscuit,52,milk contains,gluten contains; milk contains; wheat contains,old patterns missed it: has wheat
+en:bagel,52,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:wasabi-peas,51,none,gluten contains; wheat contains,"unsure: wasabi peas are usually coated with wheat flour, but not always"
+en:orzo,51,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:english-muffin,51,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:basil-pesto,51,none,milk contains; tree nuts contains,"unsure: pesto usually has parmesan and pine nuts, but some don't"
+en:roll,50,none,gluten contains; wheat contains,unsure: roll type not named; usually a bread roll
+en:lavash,50,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:imitation-crabmeat,50,none,egg contains; gluten contains; wheat contains,"unsure: imitation crab usually has wheat starch and egg white, but recipes vary"
+en:predust,49,none,gluten contains; wheat contains,unsure: predust not described; usually wheat flour
+en:cookie-mix,48,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:predusted-with,47,none,gluten contains; wheat contains,unsure: predust not described; usually wheat flour
+en:nonfat,47,none,milk contains,"unsure: probably cut off from ""nonfat milk"""
+en:white-chocolate-chunks,46,none,milk contains,old patterns missed it: has milk
+en:unbleached-high-gluten-flour,44,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:fudge-sauce,43,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:toffee-pieces,42,none,milk contains,old patterns missed it: has milk
+en:low-moisture,42,none,milk contains,"unsure: probably cut off from ""low-moisture mozzarella"""
+en:donut,42,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cow,42,none,milk contains,"unsure: probably cut off from ""cow's milk"""
+en:brownies,42,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:wonton-strips,41,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:seasoning-sauce,41,none,gluten contains; wheat contains,"unsure: seasoning sauces like Maggi usually have wheat, but not all"
+en:mayo,41,none,egg contains,old patterns missed it: has egg
+en:ble,41,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:skim,40,none,milk contains,"unsure: probably cut off from ""skim milk"""
+en:reduced-sodium-soy-sauce,40,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:white-chips,39,none,milk contains,"unsure: white chips often have milk, but some are made without it"
+en:ranch-dip,39,none,milk contains,"unsure: ranch dips are usually made with sour cream or buttermilk, but not always"
+en:crabstick,39,none,egg contains; gluten contains; wheat contains,"unsure: imitation crab usually has wheat starch and egg white, but recipes vary"
+en:tempura-chicken,38,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:soy-sauce-water,38,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:multigrain-blend,38,none,gluten contains; wheat contains,unsure: grains not named; multigrain blends usually include wheat
+en:galacto-oligosaccharides,38,none,milk contains,unsure: GOS is made from milk sugar (lactose); very little milk protein is likely left
+en:dumplings,38,none,gluten contains; wheat contains,"unsure: dumpling wrappers are usually wheat, but not always"
+en:chocolate-cookie,38,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:white-fudge,37,none,milk contains,"unsure: white fudge coatings usually have milk, but not always"
+en:non-gmo-soy-sauce,36,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chocolate-cookie-crumb,36,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:trisource-protein-blend,35,none,milk contains,"unsure: TriSource blends are usually whey, casein and soy, but not always"
+en:pasteurized-process-swiss,35,none,milk contains,old patterns missed it: has milk
+en:orzo-pasta,35,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:high-gluten-flour,35,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:fudge-coating,35,none,milk contains,"unsure: fudge coatings often have milk, but not always"
+en:cupcake-mix,35,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:ancient-grain-blend,35,none,gluten contains; wheat contains,unsure: grains not named; ancient grain blends sometimes include spelt or khorasan wheat
+en:udon,34,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:toffee-bits,34,none,milk contains,old patterns missed it: has milk
+en:shortbread,34,wheat contains,gluten contains; milk contains; wheat contains,old patterns missed it: has milk
+en:oyster-flavored-sauce,34,none,gluten contains; wheat contains,"unsure: oyster sauce usually has wheat flour, but some brands don't"
+en:mini-peanut-butter-cups,34,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:battered-with-water,34,none,gluten contains; wheat contains,"unsure: probably the start of a batter list, which is usually wheat"
+en:ramen-noodles,33,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cupcake,33,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chocolate-cookie-crumbs,33,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:ancient-grain-flour,33,none,gluten contains; wheat contains,unsure: grains not named; ancient grain flours sometimes include spelt or khorasan wheat
+en:gochujang,32,none,gluten contains; wheat contains,"unsure: gochujang often has wheat or barley, but some is made with only rice"
+en:cocoa-buttera,32,milk contains,none,"cocoa butter (typo), not dairy butter"
+en:ranch-sauce,31,none,milk contains,"unsure: ranch usually has buttermilk, but not every brand"
+en:nacho-seasoning,31,none,milk contains,"unsure: nacho seasonings usually have cheese powder, but not always"
+en:egg-replacer,31,egg contains,none,egg replacers are usually egg-free (marked unsure)
+en:cookie-bits,31,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:coca-butter,31,milk contains,none,"cocoa butter (typo), not dairy butter"
+en:brownie-pieces,31,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:yolks,30,none,egg contains,old patterns missed it: has egg
+en:spaetzle-dumplings,30,none,egg contains; gluten contains; wheat contains,"old patterns missed it: has egg, wheat"
+en:roux,30,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:doughnut,30,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:coco-butter,30,milk contains,none,"cocoa butter (typo), not dairy butter"
+en:fudge-variegate,29,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:bagel-halves,29,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:oreo-cookie-pieces,28,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:moose-tracks-fudge,28,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:honey-sesame-sticks,28,sesame contains,gluten contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:cookie-crumbs,28,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:peanut-toffee-pieces,27,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:milk-traces,27,milk contains,milk may contain,"""traces"" means a may-contain warning"
+en:edam,27,none,milk contains,old patterns missed it: has milk
+en:rotini-pasta,26,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:pie-shell,26,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:maida,26,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:farine-de-ble,26,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cookie-dough-pieces,26,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:tuna-salad,25,none,egg contains,"unsure: tuna salad usually has mayonnaise, but not always"
+en:teriyaki-seasoning,25,none,gluten contains; wheat contains,unsure: teriyaki seasoning usually has soy sauce made with wheat
+en:sub-roll,25,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:shoyu,25,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:scone,25,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:multigrain-crust,25,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:gos,25,none,milk contains,unsure: GOS is made from milk sugar (lactose); very little milk protein is likely left
+en:gardein,25,none,gluten contains; wheat contains,unsure: Gardein is a brand; most of its products have wheat gluten
+en:donut-mix,25,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:dark-soy-sauce,25,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cream-of-tarter,25,milk contains,none,"cream of tartar is a grape byproduct, not dairy"
+en:chow-mein-noodles,25,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:bechamel-sauce,25,none,gluten contains; milk contains; wheat contains,"old patterns missed it: has milk, wheat"
+en:asadero,25,none,milk contains,old patterns missed it: has milk
+en:white-confectionary-coating,24,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:waffle,24,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:half and half,24,none,milk contains,old patterns missed it: has milk
+en:crepe,24,none,egg contains; gluten contains; milk contains; wheat contains,"unsure: crepes are usually made with flour, egg and milk, but recipes vary"
+en:creamy-inside,24,milk contains,none,"label phrase (""crunchy outside, creamy inside""), not an ingredient"
+en:cookie-crumb,24,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:wrap,23,none,gluten contains; wheat contains,unsure: wrap type not named; usually a wheat tortilla
+en:spinach-tortilla,23,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:ranch seasoning,23,none,milk contains,"unsure: ranch seasoning usually has buttermilk powder, but not always"
+en:meatloaf,23,none,egg contains; gluten contains; wheat contains,"unsure: meatloaf usually has breadcrumbs and egg, but recipes vary"
+en:ivory-chocolate,23,none,milk contains,old patterns missed it: has milk
+en:chili-crackers,23,none,gluten contains; wheat contains,unsure: cracker type not named; could be rice crackers
+en:cheese-tortellini,23,milk contains,egg contains; gluten contains; milk contains; wheat contains,"unsure: tortellini pasta usually has egg, but not always"
+en:caesar dressing,23,none,egg contains; milk contains,"unsure: Caesar dressing usually has egg and parmesan, but not every brand"
+en:avocado-ranch-dressing,23,none,milk contains,"unsure: ranch usually has buttermilk, but not every brand"
+en:white-roll,22,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:white-chocolate-curls,22,none,milk contains,old patterns missed it: has milk
+en:sour-starter,22,none,gluten contains; wheat contains,unsure: sourdough starters are usually wheat or rye flour
+en:sour-dough,22,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:skyr,22,none,milk contains,old patterns missed it: has milk
+en:salsa-ranch-dressing,22,none,milk contains,"unsure: ranch usually has buttermilk, but not every brand"
+en:pie-crust,22,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:macaroon-paste,22,none,tree nuts contains,"unsure: macaroon paste is usually almond-based, but some is coconut"
+en:levain,22,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:jarlsberg,22,none,milk contains,old patterns missed it: has milk
+en:fudge-pieces,22,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:cultured-pasteurized,22,none,milk contains,"unsure: probably cut off from ""cultured pasteurized milk"""
+en:creme-cake-mix,22,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cracker meal,22,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:colostrum,22,none,milk contains,old patterns missed it: has milk
+en:what-flour,21,none,gluten contains; wheat contains,"unsure: probably a typo for ""wheat flour"""
+en:toffee-peanuts,21,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:sheep-s,21,none,milk contains,"unsure: probably cut off from ""sheep's milk"""
+en:semi-soft,21,none,milk contains,"unsure: probably cut off from ""semi-soft cheese"""
+en:rolled-whole-grain-blend,21,none,gluten contains; wheat contains,"unsure: grains not named; rolled grain blends often include wheat, rye or barley"
+en:pie-crust-pieces,21,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:milk-chocolate-peanut-butter-cups,21,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:malted-milk-balls,21,milk contains,gluten contains; milk contains; wheat contains,old patterns missed it: has wheat
+en:light-soy-sauce,21,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:gravy-mix,21,none,gluten contains; wheat contains,"unsure: gravy mixes are usually thickened with wheat flour, but not all"
+en:fudge-icing,21,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:freekeh,21,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cheese-crackers,21,milk contains,gluten contains; milk contains; wheat contains,old patterns missed it: has wheat
+en:butyrospermum-parkii-butter,21,milk contains,none,"shea butter, not dairy"
+en:bbq-ranch-dressing,21,none,milk contains,"unsure: ranch usually has buttermilk, but not every brand"
+en:shrimp-tempura,20,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:phyllo-dough,20,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:moose-tracks-fudge-swirl,20,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:kashi-seven-whole-grains,20,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:fudge-base,20,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:chocolate-sandwich-cookie,20,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:white-confectionary,19,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:whet-flour,19,none,gluten contains; wheat contains,"unsure: probably a typo for ""wheat flour"""
+en:stuffed-pasta,19,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sodium-casienate,19,none,milk contains,old patterns missed it: has milk
+en:snaps,19,none,gluten contains; wheat contains,"unsure: probably gingersnaps or similar cookies, which are usually wheat"
+en:shoyu-soy-sauce,19,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:ravioli,19,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:less-than-2-soy-sauce,19,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:fontal,19,none,milk contains,old patterns missed it: has milk
+en:creme-fraiche-sauce,19,none,milk contains,old patterns missed it: has milk
+en:white-confectionery-wafers,18,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:white-chocolate-drops,18,none,milk contains,old patterns missed it: has milk
+en:white-cake-mix,18,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:streusel,18,none,gluten contains; milk contains; wheat contains,"old patterns missed it: has milk, wheat"
+en:sprouted-seed-and-grain-blend,18,none,gluten contains; wheat contains,unsure: grains not named; sprouted grain blends usually include wheat
+en:sherbet,18,none,milk contains,old patterns missed it: has milk
+en:sandwich-cookie,18,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:nutmeats,18,none,tree nuts contains,unsure: old word for shelled nuts; type not named
+en:muffin,18,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:milk-solids-14-minimum-cocoa-solids-25-minimum-contains-vegetable-fats-in-addition-to-cocoa-butter,18,none,milk contains,old patterns missed it: has milk
+en:fudge-ripple,18,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:fudge-ribbon,18,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:french-custard-base,18,milk contains,egg contains; milk contains,old patterns missed it: has egg
+en:fillo-dough,18,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:dough-mix,18,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:crust-mix,18,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:crumbs,18,none,gluten contains; wheat contains,unsure: crumb type not named; usually bread or cookie crumbs
+en:cooked-enriched-pasta-product,18,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cocoa-butter-oil,18,milk contains,none,"cocoa butter, not dairy butter"
+en:chocolate-chip-cookies,18,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cheese-ravioli,18,milk contains,gluten contains; milk contains; wheat contains,old patterns missed it: has wheat
+en:cheese-color,18,milk contains,none,"cheese coloring is annatto, not milk"
+en:cavatappi-pasta,18,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cajun-sesame-sticks,18,sesame contains,gluten contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:biscuit-mix,18,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:yolk,17,none,egg contains,old patterns missed it: has egg
+en:whole-grain-flour-blend,17,none,gluten contains; wheat contains,unsure: grains not named; whole grain flour blends usually include wheat
+en:white-confectionery-drops,17,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:white-chocolatey-coating,17,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:tomato-pasta,17,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:threadfin-bream-surimi,17,none,egg contains; gluten contains; wheat contains,"unsure: surimi usually has wheat starch and egg white, but recipes vary"
+en:reduced-sodium-tamari,17,none,gluten contains; wheat contains,"unsure: tamari is often wheat-free, but some brands brew it with wheat"
+en:multi-grain-blend,17,none,gluten contains; wheat contains,unsure: grains not named; multigrain blends usually include wheat
+en:marshmallow-creme,17,none,egg contains,"unsure: marshmallow creme often has egg white, but not always"
+en:made-in-a-bakery-that-may-also-use-milk,17,milk contains,milk may contain,"facility warning, so may contain"
+en:lacto-n-tetraose,17,none,milk contains,unsure: this baby-formula sugar is made by fermenting milk sugar (lactose); very little milk protein is likely left
+en:goat,17,none,milk contains,"unsure: could be goat meat, or cut off from ""goat cheese"" or ""goat milk"""
+en:fudge-revel,17,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:fudge-flakes,17,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:dehydrated-sourdough,17,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cultured-lowfat,17,none,milk contains,"unsure: probably cut off from ""cultured lowfat milk"""
+en:chocolate-cookie-bits,17,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:wheat-and-soy-are-used-in-the-production-of-other-products,16,none,gluten may contain; wheat may contain,old patterns missed it: has wheat
+en:unbleached-enriched-high-gluten-flour,16,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:teriyaki-powder,16,none,gluten contains; wheat contains,unsure: teriyaki seasoning usually has soy sauce made with wheat
+en:tempura-crunch,16,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sugar-cone,16,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sesame-butter,16,milk contains; sesame contains,sesame contains,"sesame paste, not dairy butter"
+en:non-gmo-flour,16,none,gluten contains; wheat contains,unsure: flour type not named; in the US plain flour usually means wheat
+en:m-m-s-chocolate-candies,16,none,milk contains,old patterns missed it: has milk
+en:harina-enriquecida,16,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:grade-a-pasteurized,16,none,milk contains,"unsure: probably cut off from ""grade A pasteurized milk"""
+en:crumb,16,none,gluten contains; wheat contains,unsure: crumb type not named; usually bread or cookie crumbs
+en:cookie-crunch,16,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chocolate-chip-cookie,16,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:brownie-bits,16,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:biscoff-cookies,16,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:american,16,none,milk contains,"unsure: probably cut off from ""American cheese"""
+en:white-fudge-coating,15,none,milk contains,"unsure: white fudge coatings usually have milk, but not always"
+en:white-compound,15,none,milk contains,"unsure: white compound coatings often have milk, but some are made without it"
+en:whea,15,none,gluten contains; wheat contains,"unsure: probably cut off from ""wheat"""
+en:tempura-flour,15,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sweet-soy-sauce,15,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:rusk,15,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:rolls,15,none,gluten contains; wheat contains,unsure: roll type not named; usually bread rolls
+en:puff-pastry-dough,15,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:predusted-and-battered-with,15,none,gluten contains; wheat contains,unsure: predust and batter not described; usually wheat flour
+en:pasteurized-part,15,none,milk contains,"unsure: probably cut off from ""pasteurized part-skim milk"""
+en:malt-center,15,none,gluten contains; milk contains,"unsure: malted milk centers usually have barley malt and milk, but recipes vary"
+en:m-m-s,15,none,milk contains,old patterns missed it: has milk
+en:jack,15,none,milk contains,"unsure: probably cut off from ""Monterey Jack"" cheese"
+en:custard,15,milk contains,egg contains; milk contains,old patterns missed it: has egg
+en:cultured-pasteurized-sheep-s,15,none,milk contains,old patterns missed it: has milk
+en:chocolate-pudding,15,none,milk contains,"unsure: pudding is usually made with milk, but not always"
+en:chocolate-cake,15,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cake-meal,15,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:batter-ingredients,15,none,gluten contains; wheat contains,unsure: batter not described; usually wheat
+en:whole-grain-khorasan-flour,14,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:whole-and-skim,14,none,milk contains,"unsure: probably cut off from ""whole and skim milk"""
+en:white-confectioner-s-coating,14,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:whe,14,none,gluten contains; wheat contains,"unsure: probably cut off from ""wheat"""
+en:wasabi-green-peas,14,none,gluten contains; wheat contains,"unsure: wasabi peas are usually coated with wheat flour, but not always"
+en:waffle-cone,14,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:stilton,14,none,milk contains,old patterns missed it: has milk
+en:salisbury-steak,14,none,gluten contains; wheat contains,"unsure: Salisbury steak usually has breadcrumbs, but not always"
+en:quiche-filling,14,none,egg contains; milk contains,"old patterns missed it: has egg, milk"
+en:prunus-amygdalus-dulcis,14,none,tree nuts contains,old patterns missed it: has tree nuts
+en:oreo-cookies,14,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:orange-sherbet,14,none,milk contains,old patterns missed it: has milk
+en:lavash-wrap,14,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:honey-mustard-dressing,14,none,egg contains,"unsure: honey mustard dressing often has egg, but not always"
+en:deli-roll,14,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cracker-crumbs,14,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:crab-surimi,14,none,egg contains; gluten contains; wheat contains,"unsure: surimi usually has wheat starch and egg white, but recipes vary"
+en:cookie-dough-with-chips,14,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cocoa-butter-chocolate-liquor,14,milk contains,none,"cocoa butter and chocolate liquor, no dairy named"
+en:chocolate-sandwich-cookie-pieces,14,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:candy-coated-chocolate,14,none,milk contains,"unsure: candy-coated chocolates are usually milk chocolate, but not always"
+en:wonton-wrapper,13,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:trail-mix,13,none,peanut contains; tree nuts contains,unsure: nuts not named; trail mix usually has peanuts and tree nuts
+en:toffee-candy,13,none,milk contains,old patterns missed it: has milk
+en:sprouted-grains,13,none,gluten contains; wheat contains,unsure: grains not named; sprouted grain blends usually include wheat
+en:soysauce,13,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:ranch dressing,13,none,egg contains; milk contains,"unsure: ranch usually has buttermilk and egg, but not every brand"
+en:premier-protein-bar-protein-blend,13,none,milk contains,"unsure: Premier Protein blends are usually milk protein, but not always"
+en:penne-rigate-pasta,13,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:pancake,13,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:nougat,13,none,egg contains; milk contains,"unsure: nougat usually has egg white and often milk, but recipes vary"
+en:nonfat-dry,13,none,milk contains,"unsure: probably cut off from ""nonfat dry milk"""
+en:natural-and-artificial-butter-flavors,13,none,milk contains,unsure: butter flavor may or may not come from milk
+en:multigrain-mix,13,none,gluten contains; wheat contains,unsure: grains not named; multigrain mixes usually include wheat
+en:mineral-salts-to-prevent-cream-separation-in-hot-liquids,13,milk contains,none,"describes what the mineral salts do, not a milk ingredient"
+en:kalbi-sauce,13,none,gluten contains; wheat contains,unsure: kalbi sauce usually has soy sauce made with wheat
+en:imitation crab,13,none,egg contains; gluten contains; wheat contains,"unsure: imitation crab usually has wheat starch and egg white, but recipes vary"
+en:grade-a-fat-free,13,none,milk contains,"unsure: probably cut off from ""grade A fat free milk"""
+en:gelato,13,none,milk contains,old patterns missed it: has milk
+en:dough-starter,13,none,gluten contains; wheat contains,unsure: starter not described; usually wheat flour
+en:crema,13,none,milk contains,old patterns missed it: has milk
+en:cookie-base,13,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cooked-cavatappi-pasta,13,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:contains-2-and-less-of-soy-sauce,13,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:coleslaw-dressing,13,none,egg contains,"unsure: coleslaw dressing usually has mayonnaise, but not always"
+en:cocoa-butter-soy-lecithin,13,milk contains,none,"cocoa butter and soy lecithin, no dairy named"
+en:ciabatta-roll,13,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chocolate-wafers,13,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chocolate-sandwich-cookies,13,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:brownie-base,13,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:battered-chicken,13,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:basil-pesto-sauce,13,none,milk contains; tree nuts contains,"unsure: pesto usually has parmesan and pine nuts, but some don't"
+en:white-confectioners-coating,12,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:white-compound-coating,12,none,milk contains,"unsure: white compound coatings often have milk, but some are made without it"
+en:vanilla-wafers,12,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:unbleached-white,12,none,gluten contains; wheat contains,"unsure: probably cut off from ""unbleached white flour"""
+en:tikka-masala-sauce,12,none,milk contains,"unsure: tikka masala sauce usually has cream or yogurt, but not always"
+en:sugar-cookie-pieces,12,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sponge-cake,12,none,egg contains; gluten contains; wheat contains,"old patterns missed it: has egg, wheat"
+en:roquefort,12,none,milk contains,old patterns missed it: has milk
+en:pie-chips,12,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:phyllo-pastry,12,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:peanut-butter-cup-pieces,12,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:patent-flour,12,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:oyster sauce,12,none,gluten contains; wheat contains,"unsure: oyster sauce usually has wheat flour, but some brands don't"
+en:oriental-noodles,12,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:oreo cookie pieces,12,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:omelette,12,none,egg contains,old patterns missed it: has egg
+en:nut-flour-blend,12,none,tree nuts contains,unsure: nuts not named; the blend might include peanut
+en:non-dairy creamer,12,none,milk contains,unsure: non-dairy creamers often still have sodium caseinate from milk
+en:natural and artificial butter flavor,12,none,milk contains,unsure: butter flavor may or may not come from milk
+en:multi-grain-flour-blend,12,none,gluten contains; wheat contains,unsure: grains not named; multigrain flour blends usually include wheat
+en:gochujang-sauce,12,none,gluten contains; wheat contains,"unsure: gochujang often has wheat or barley, but some is made with only rice"
+en:germ,12,none,gluten contains; wheat contains,"unsure: probably cut off from ""wheat germ"""
+en:enriched-orzo,12,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:egg-nog-base,12,egg contains,egg contains; milk contains,old patterns missed it: has milk
+en:cow-s,12,none,milk contains,"unsure: probably cut off from ""cow's milk"""
+en:chocolate-wafer,12,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:brazilian-nuts,12,none,tree nuts contains,old patterns missed it: has tree nuts
+en:ancient-grains-blend,12,none,gluten contains; wheat contains,unsure: grains not named; ancient grain blends sometimes include spelt or khorasan wheat
+en:00-flour,12,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:white-confectionery-chunks,11,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:white-confection-drops,11,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:vital-gluten,11,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:vanilla-cookies,11,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:toffee-sauce,11,none,milk contains,old patterns missed it: has milk
+en:sweet-creme-solids,11,none,milk contains,"unsure: probably ""sweet cream solids"""
+en:sprouted-whole-grains,11,none,gluten contains; wheat contains,unsure: grains not named; sprouted grain blends usually include wheat
+en:sodium-metabisulfite-crumb-topping,11,none,gluten contains; wheat contains,unsure: crumb topping not described; usually wheat
+en:reduced-minerals,11,none,milk contains,"unsure: probably cut off from ""reduced minerals whey"""
+en:reduced-mineral,11,none,milk contains,"unsure: probably cut off from ""reduced mineral whey"""
+en:ramen,11,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:precooked-pasta,11,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:powerbar-protein-blend,11,none,milk contains,"unsure: PowerBar protein blends are usually milk and soy protein, but not always"
+en:pasteurized-part-skim,11,none,milk contains,"unsure: probably cut off from ""pasteurized part-skim milk"""
+en:nutella,11,none,milk contains; tree nuts contains,"old patterns missed it: has milk, tree nuts"
+en:malt-ball-center,11,none,gluten contains; milk contains,"unsure: malted milk centers usually have barley malt and milk, but recipes vary"
+en:maasdam,11,none,milk contains,old patterns missed it: has milk
+en:less-than-2-of-soy-sauce,11,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:lasagna-noodles,11,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:lacto-n-neotetraose,11,none,milk contains,unsure: this baby-formula sugar is made by fermenting milk sugar (lactose); very little milk protein is likely left
+en:kashi-seven-whole-grain-flour,11,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:italian-sub-roll,11,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:homestyle-ranch-dressing,11,none,egg contains; milk contains,"unsure: ranch usually has buttermilk and egg, but not every brand"
+en:fudge-brownie,11,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:french-toast,11,none,egg contains; gluten contains; milk contains; wheat contains,"unsure: French toast is usually bread dipped in egg and milk, but recipes vary"
+en:fettuccine,11,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:elbow-pasta,11,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cracked-grain-flour,11,none,gluten contains; wheat contains,unsure: grains not named; usually includes wheat
+en:chocolate-cake-pieces,11,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cheesecake-pieces,11,milk contains,gluten contains; milk contains; wheat contains,"unsure: cheesecake pieces usually include a wheat crust, but not always"
+en:cheddar-sesame-sticks,11,milk contains; sesame contains,gluten contains; milk contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:cake-crunch,11,none,gluten contains; wheat contains,unsure: cake crunch pieces are usually made from wheat cake crumbs
+en:whites,10,none,egg contains,"unsure: probably cut off from ""egg whites"""
+en:white-sauce,10,none,gluten contains; milk contains; wheat contains,"unsure: white sauce is usually milk, butter and flour, but recipes vary"
+en:white-chunks,10,none,milk contains,"unsure: probably white chocolate or white coating chunks, which usually have milk"
+en:white-chocolate-shavings,10,none,milk contains,old patterns missed it: has milk
+en:teriyaki-glaze,10,none,gluten contains; wheat contains,unsure: teriyaki usually has soy sauce made with wheat
+en:tempura-batter,10,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sugar-cookie-mix,10,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:streusel-topping,10,none,gluten contains; milk contains; wheat contains,"old patterns missed it: has milk, wheat"
+en:spring-roll-wrapper,10,none,gluten contains; wheat contains,unsure: spring roll wrappers can be wheat or rice
+en:seasoning sauce,10,none,gluten contains; wheat contains,"unsure: seasoning sauces like Maggi usually have wheat, but not all"
+en:roca-buttercrunch,10,milk contains,milk contains; tree nuts contains,old patterns missed it: has tree nuts
+en:peanut butter cups,10,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:non-fat,10,none,milk contains,"unsure: probably cut off from ""non-fat milk"""
+en:non-dairy-whipped-topping,10,none,milk contains,unsure: non-dairy whipped toppings often still have sodium caseinate from milk
+en:naturally-aged-sourdough-starter,10,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:muffin-mix,10,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:milk-solids-14-minimum-contains-vegetable-fats-in-addition-to-cocoa-butter,10,none,milk contains,old patterns missed it: has milk
+en:kung-pao-sauce,10,none,gluten contains; wheat contains,unsure: kung pao sauce usually has soy sauce made with wheat
+en:king-arthur-unbleached-flour,10,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:khorasan-flour,10,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:kashi-seven-whole-grains-and-sesame-blend,10,sesame contains,gluten contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:gravy-seasoning,10,none,gluten contains; wheat contains,"unsure: gravy mixes are usually thickened with wheat flour, but not all"
+en:fudge-chips,10,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:flour-predust,10,none,gluten contains; wheat contains,unsure: flour type not named; predust is usually wheat flour
+en:flaxmilk,10,milk contains,none,"flax milk is a plant milk, not dairy"
+en:enriched-bleach-flour,10,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:crust-mix-with-kashi-seven-whole-grains-and-sesame-blend,10,sesame contains,gluten contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:cream-yeast,10,milk contains,none,"cream yeast is liquid baker's yeast, not dairy"
+en:chipotle-ranch-dressing,10,none,egg contains; milk contains,"unsure: ranch usually has buttermilk and egg, but not every brand"
+en:bovine-colostrum,10,none,milk contains,old patterns missed it: has milk
+en:white-stilton,9,none,milk contains,old patterns missed it: has milk
+en:white-drops,9,none,milk contains,"unsure: probably white chocolate or coating drops, which usually have milk"
+en:white-confectionery-chips,9,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:vanilla-pudding,9,none,milk contains,"unsure: pudding is usually made with milk, but not always"
+en:ultragrain,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:top-and-bottom-crust,9,none,gluten contains; wheat contains,unsure: crust not described; usually wheat
+en:tempura-shrimp,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:tamari-roasted-almonds,9,tree nuts contains,gluten contains; tree nuts contains; wheat contains,"unsure: tamari is often wheat-free, but some brands brew it with wheat"
+en:spiced-cookies,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:speculoos-cookies,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sodium-casinate,9,none,milk contains,old patterns missed it: has milk
+en:sodium-casenate,9,none,milk contains,old patterns missed it: has milk
+en:sesame sticks,9,sesame contains,gluten contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:scone-mix,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sandwich,9,none,gluten contains; wheat contains,unsure: sandwich not described; usually on wheat bread
+en:salisbury-steak-patty,9,none,gluten contains; wheat contains,"unsure: Salisbury steak usually has breadcrumbs, but not always"
+en:rennet-and-aged-over-10-months,9,none,milk contains,unsure: label phrase from an aged cheese
+en:reese-s-peanut-butter-cups,9,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:red-velvet-cake-mix,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:pretzel-salt,9,wheat contains,none,pretzel salt is just coarse salt
+en:pretzel-m-salt,9,wheat contains,none,pretzel salt is just coarse salt
+en:pizza,9,none,gluten contains; milk contains; wheat contains,"unsure: pizza usually has a wheat crust and cheese, but not always"
+en:pie-crust-mounded-cookie-gems,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:pie,9,none,gluten contains; wheat contains,unsure: pie type not described; crust is usually wheat
+en:peppermint-bark,9,none,milk contains,"unsure: peppermint bark usually has white chocolate with milk, but not always"
+en:peanut-butter-fudge,9,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:non-gmo soy sauce,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:nestle-toll-house-premier-white-morsels,9,none,milk contains,old patterns missed it: has milk
+en:natural-sourdough,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:nacho seasoning,9,none,milk contains,"unsure: nacho seasonings usually have cheese powder, but not always"
+en:naan,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:multigrain,9,none,gluten contains; wheat contains,unsure: grains not named; multigrain products usually include wheat
+en:multi-grain-flour,9,none,gluten contains; wheat contains,unsure: grains not named; multigrain flour usually includes wheat
+en:milk solids 14% minimum.cocoa solids 25% minimum.contains vegetable fats in addition to cocoa butter,9,none,milk contains,old patterns missed it: has milk
+en:melting-wafers,9,none,milk contains,"unsure: candy melting wafers often have milk, but not all"
+en:malt-balls,9,none,gluten contains; milk contains,old patterns missed it: has milk
+en:lnnt,9,none,milk contains,unsure: LNnT is a baby-formula sugar made by fermenting milk sugar (lactose); very little milk protein is likely left
+en:latte,9,none,milk contains,old patterns missed it: has milk
+en:kadayif,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:honey-roast-sesame-sticks,9,sesame contains,gluten contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:hoisin sauce,9,none,gluten contains; wheat contains,"unsure: hoisin sauce usually has wheat, but some brands are gluten-free"
+en:gochujang-paste,9,none,gluten contains; wheat contains,"unsure: gochujang often has wheat or barley, but some is made with only rice"
+en:fudge-chunks,9,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:feuilletine,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:english-toffee,9,none,milk contains,old patterns missed it: has milk
+en:curly-pasta,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cultured-pasteurized-flaxmilk,9,milk contains,none,"flax milk is a plant milk, not dairy"
+en:crumb-topping,9,none,gluten contains; wheat contains,unsure: crumb topping not described; usually wheat
+en:cornmeal-crust,9,none,gluten contains; wheat contains,unsure: cornmeal crusts often also have wheat flour
+en:cookie-dough-base,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cooked-lo-mein-noodles,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cone-pieces,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cocoa-buttert,9,milk contains,none,"cocoa butter (typo), not dairy butter"
+en:chocolate-cookie-swirl,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chocolate-cake-mix,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chobani,9,none,milk contains,"unsure: brand name; Chobani is mostly dairy yogurt, but it also sells oat products"
+en:chicken-nuggets,9,none,gluten contains; wheat contains,"unsure: chicken nuggets are usually breaded with wheat, but not always"
+en:candy-coated-chocolate-pieces,9,none,milk contains,"unsure: candy-coated chocolates are usually milk chocolate, but not always"
+en:battered,9,none,gluten contains; wheat contains,unsure: batter not described; usually wheat
+en:batter-coating,9,none,gluten contains; wheat contains,unsure: batter not described; usually wheat
+en:baguette,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:bagel-chips,9,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:ziti-pasta,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:yellow-cake-mix,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:white-sub-sandwich-roll,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:white-confectionary-chips,8,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:waffle-cone-pieces,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:unagi-sauce,8,none,gluten contains; wheat contains,unsure: unagi sauce usually has soy sauce made with wheat
+en:tortellini,8,none,egg contains; gluten contains; wheat contains,"unsure: tortellini pasta usually has egg, but not always"
+en:tomato-tortilla,8,none,gluten contains; wheat contains,"unsure: probably a flour tortilla, but could be corn"
+en:tikka-sauce,8,none,milk contains,"unsure: tikka masala sauce usually has cream or yogurt, but not always"
+en:tamari-shoyu-sauce,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sunbutter,8,milk contains,none,"sunflower seed butter, not dairy"
+en:sugar-cookie-base,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sugar-cookie,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sub-bun,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:stir-fry-sauce,8,none,gluten contains; wheat contains,unsure: stir-fry sauces usually have soy sauce made with wheat
+en:soybean-sauce,8,none,gluten contains; wheat contains,"unsure: probably soy sauce, which is usually made with wheat"
+en:soy-sauce-seasoning,8,none,gluten contains; wheat contains,unsure: soy sauce powder is usually made with wheat
+en:shrimp-wonton,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sausage-gravy,8,none,gluten contains; milk contains; wheat contains,"unsure: sausage gravy is usually made with milk and flour, but recipes vary"
+en:salted-fudge-swirl,8,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:sal-butter,8,milk contains,none,"sal butter is a plant fat, not dairy"
+en:reese-s-peanut-butter-cup-pieces,8,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:pine-kernels,8,none,tree nuts contains,old patterns missed it: has tree nuts
+en:pasteurized-mil,8,none,milk contains,"unsure: probably cut off from ""pasteurized milk"""
+en:pasta-with-garlic-sauce,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:oyster flavored sauce,8,none,gluten contains; wheat contains,"unsure: oyster sauce usually has wheat flour, but some brands don't"
+en:oreo-chocolate-sandwich-cookie-pieces,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:oreo-basecake-crumbs,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:oreo,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:oatmeal-cookie-pieces,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:nut-meats,8,none,tree nuts contains,unsure: nuts not named
+en:nut-coating,8,none,tree nuts contains,unsure: nuts not named; could be peanut instead
+en:non-hydrogenated-non-dairy-creamer,8,none,milk contains,unsure: non-dairy creamers often still have sodium caseinate from milk
+en:non dairy creamer,8,none,milk contains,unsure: non-dairy creamers often still have sodium caseinate from milk
+en:multigrain-flour,8,none,gluten contains; wheat contains,unsure: grains not named; multigrain flour usually includes wheat
+en:multigrain-flakes,8,none,gluten contains; wheat contains,unsure: grains not named; multigrain flakes usually include wheat
+en:mlk,8,none,milk contains,old patterns missed it: has milk
+en:may-be-topped-with-flour,8,none,gluten contains; wheat contains,"unsure: optional topping, and flour type not named; usually wheat"
+en:matzo-balls,8,wheat contains,egg contains; gluten contains; wheat contains,old patterns missed it: has egg
+en:maní,8,none,peanut contains,old patterns missed it: has peanut
+en:m-m-s-peanut-butter-chocolate-candies,8,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:low-moisture-part,8,none,milk contains,"unsure: probably cut off from ""low-moisture part-skim mozzarella"""
+en:lemon-curd,8,milk contains,egg contains; milk contains,old patterns missed it: has egg
+en:laktose,8,none,milk contains,old patterns missed it: has milk
+en:korean-bbq-sauce,8,none,gluten contains; wheat contains,unsure: Korean BBQ sauce usually has soy sauce made with wheat
+en:jalapeno-ranch-dressing,8,none,egg contains; milk contains,"unsure: ranch usually has buttermilk and egg, but not every brand"
+en:italian-style-meatballs,8,none,egg contains; gluten contains; milk contains; wheat contains,"unsure: meatballs usually have breadcrumbs, egg and cheese, but recipes vary"
+en:ingredients-consist-of-white-chocolate,8,none,milk contains,old patterns missed it: has milk
+en:hvetemel,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:honey-nut-coating,8,none,tree nuts contains,unsure: nuts not named; honey nut coatings may have almond or other nuts
+en:heat-flour,8,none,gluten contains; wheat contains,"unsure: probably a typo for ""wheat flour"""
+en:hazel-nuts,8,none,tree nuts contains,old patterns missed it: has tree nuts
+en:garlic-sesame-sticks,8,sesame contains,gluten contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:garlic-mayo-sauce,8,none,egg contains,old patterns missed it: has egg
+en:enriched-spinach-pasta,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:eggnog-base,8,egg contains,egg contains; milk contains,old patterns missed it: has milk
+en:eel-sauce,8,none,gluten contains; wheat contains,unsure: eel sauce usually has soy sauce made with wheat
+en:dried-sour-dough,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:dough-base,8,none,gluten contains; wheat contains,unsure: dough not described; usually wheat
+en:crumble-topping,8,none,gluten contains; wheat contains,unsure: crumble topping not described; usually wheat flour
+en:creme-filled-cookies,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:corn-biscuits,8,none,gluten contains; wheat contains,unsure: corn biscuits usually also have wheat flour
+en:cooked-multigrains,8,none,gluten contains; wheat contains,unsure: grains not named; multigrain blends usually include wheat
+en:contains-less-than-2-soy-sauce,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cinnamon-roll,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cheesecake,8,milk contains,egg contains; gluten contains; milk contains; wheat contains,"unsure: cheesecake usually has cream cheese, eggs and a wheat crust, but recipes vary"
+en:cheese-manicotti,8,milk contains,gluten contains; milk contains; wheat contains,old patterns missed it: has wheat
+en:cheddar-crackers,8,milk contains,gluten contains; milk contains; wheat contains,old patterns missed it: has wheat
+en:cashes,8,none,tree nuts contains,"unsure: probably a typo for ""cashews"""
+en:buttercrisp-crackers,8,milk contains,gluten contains; milk contains; wheat contains,old patterns missed it: has wheat
+en:brownie-dough,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:brownie-chunks,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:brownie-brittle-mix,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:brioche-bun,8,none,egg contains; gluten contains; milk contains; wheat contains,"unsure: brioche is usually made with egg, butter and milk, but recipes vary"
+en:banana-split-base,8,none,milk contains,"unsure: probably an ice cream base, which usually has milk"
+en:baking-mix,8,none,gluten contains; wheat contains,unsure: baking mix not described; usually wheat flour
+en:bagel-dough,8,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:alfredo sauce,8,none,milk contains,old patterns missed it: has milk
+de:cashewnüsse etc. einschließen),8,tree nuts contains,tree nuts may contain,"only found in trace lists, so may contain"
+en:yolk-mix,7,none,egg contains,old patterns missed it: has egg
+en:wrapper-skin,7,none,gluten contains; wheat contains,unsure: wrapper type not named; usually wheat
+en:white-confectionery,7,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:white-confectioner-s-drops,7,none,milk contains,"unsure: white coatings often have milk, but some are made without it"
+en:white-chocolate-powder,7,none,milk contains,old patterns missed it: has milk
+en:white chips,7,none,milk contains,"unsure: white chips often have milk, but some are made without it"
+en:whip-topping,7,none,milk contains,"unsure: whipped toppings often have sodium caseinate, but not all"
+en:wensleydale,7,none,milk contains,old patterns missed it: has milk
+en:waterchestnuts,7,tree nuts contains,none,"water chestnut is a vegetable, not a tree nut"
+en:wafer-ingredients,7,none,gluten contains; wheat contains,unsure: wafers are usually wheat
+en:wafer-cone,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:vanilla-wafer,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:vanilla-cookie,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:ultragraina-a,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:ultragraina,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:tribuild-protein-blend,7,none,milk contains,unsure: protein blend not described; these are usually milk proteins
+en:tomato-rotini,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:tomato-basil-tortilla,7,none,gluten contains; wheat contains,"unsure: probably a flour tortilla, but could be corn"
+en:tehina,7,none,sesame contains,old patterns missed it: has sesame
+en:tarwebloem,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:süßmolkenpulver,7,none,milk contains,old patterns missed it: has milk
+en:southwest-ranch-dressing,7,none,egg contains; milk contains,"unsure: ranch usually has buttermilk and egg, but not every brand"
+en:shell-pasta,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:royal-icing-mix,7,none,egg contains,unsure: royal icing mixes usually have dried egg white or meringue powder
+en:rejuvelac,7,none,gluten contains; wheat contains,"unsure: rejuvelac is usually made from sprouted wheat berries, but not always"
+en:ranch-dressing-mix,7,none,milk contains,"unsure: ranch mixes usually have buttermilk powder, but not always"
+en:raised-donut-mix,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:quiche-base,7,none,egg contains; milk contains,unsure: quiche filling is usually egg and milk or cream
+en:quark,7,none,milk contains,old patterns missed it: has milk
+en:prunus amygdalus dulcis,7,none,tree nuts contains,old patterns missed it: has tree nuts
+en:proprietary-flour-blend,7,none,gluten contains; wheat contains,unsure: flour type not named; usually includes wheat
+en:premier-protein-shake-protein-blend,7,none,milk contains,"unsure: Premier Protein blends are usually milk protein, but not always"
+en:premier protein shake protein blend,7,none,milk contains,"unsure: Premier Protein blends are usually milk protein, but not always"
+en:pound-cake,7,none,egg contains; gluten contains; milk contains; wheat contains,"unsure: pound cake is usually made with flour, eggs and butter"
+en:pasteurized-m,7,none,milk contains,"unsure: probably cut off from ""pasteurized milk"""
+en:pasteurized sheep's,7,none,milk contains,old patterns missed it: has milk
+en:pasta-ingredients,7,none,gluten contains; wheat contains,unsure: pasta type not named; usually wheat
+en:pancake-batter,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:orange-sherbet-base,7,none,milk contains,old patterns missed it: has milk
+en:nut flour blend,7,none,tree nuts contains,unsure: nuts not named; the blend might include peanut
+en:non-gmo flour,7,none,gluten contains; wheat contains,unsure: flour type not named; in the US plain flour usually means wheat
+en:non-dairy-topping-base,7,none,milk contains,unsure: non-dairy toppings often still have sodium caseinate from milk
+en:nestle-butterfinger-candy-pieces,7,milk contains,milk contains; peanut contains,old patterns missed it: has peanut
+en:natural-soy-sauce,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:nachos,7,none,milk contains,"unsure: nachos usually have cheese, but not always"
+en:monterey,7,none,milk contains,"unsure: probably cut off from ""Monterey Jack"" cheese"
+en:modified-flour,7,none,gluten contains; wheat contains,unsure: flour type not named; usually wheat
+en:maruchan,7,none,gluten contains; wheat contains,unsure: Maruchan is a ramen brand; its noodles are wheat
+en:m-m-s-peanut-chocolate-candies,7,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:lo-mein-noodles,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:lite-ranch-dressing,7,none,egg contains; milk contains,"unsure: ranch usually has buttermilk and egg, but not every brand"
+en:less-sodium-soy-sauce,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:ladyfingers,7,none,egg contains; gluten contains; wheat contains,"old patterns missed it: has egg, wheat"
+en:lactosa,7,none,milk contains,old patterns missed it: has milk
+en:kashi-seven,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:kashi-cracked-seven-whole-grain-blend,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:kale-pesto,7,none,milk contains; tree nuts contains,"unsure: pesto usually has parmesan and nuts, but some don't"
+en:kakaobutter,7,milk contains,none,"German for cocoa butter, not dairy"
+en:hoagie,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:grano,7,none,gluten contains; wheat contains,unsure: Italian for grain or wheat; usually wheat
+en:goodles shells,7,none,gluten contains; wheat contains,unsure: Goodles pasta is a brand made with wheat flour
+en:glucono-delta-lactose,7,milk contains,none,"typo for glucono delta lactone, an acid, not milk"
+en:gemelli-pasta,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:fusilli-pasta,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:fudge-truffles,7,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:farfalle-pasta,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:enriched-orzo-pasta,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:egg-rolls,7,egg contains,egg contains; gluten contains; wheat contains,unsure: egg roll wrappers are wheat and sometimes egg
+en:egg-roll,7,egg contains,egg contains; gluten contains; wheat contains,unsure: egg roll wrappers are wheat and sometimes egg
+en:custard-base,7,milk contains,egg contains; milk contains,old patterns missed it: has egg
+en:cookie-dough-chunks,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cookie-dough-cake-mix,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cookie-butter,7,milk contains,gluten contains; wheat contains,"cookie butter is ground cookies and oil (wheat), usually no milk"
+en:contains-two-percent-and-less-of-cracker-meal,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:consist-of-white-chocolate,7,none,milk contains,old patterns missed it: has milk
+en:considered-a-tree-nut,7,tree nuts contains,none,"label phrase about coconut, which is not a tree nut here (marked unsure)"
+en:chocolate-fudge-swirl,7,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:chocolate-fudge-ribbon,7,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:chocolate-cupcake,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chocolate cookies,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chees,7,none,milk contains,"unsure: probably cut off from ""cheese"""
+en:cavatappi,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:caramel-turtles,7,none,milk contains; tree nuts contains,"unsure: turtle candies usually have pecans and milk caramel, but not always"
+en:caramel-fudge,7,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:camembert,7,none,milk contains,old patterns missed it: has milk
+en:cake-piece,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cake-batter,7,none,gluten contains; wheat contains,unsure: cake batter is usually wheat-based
+en:buttermilk biscuit,7,milk contains,gluten contains; milk contains; wheat contains,old patterns missed it: has wheat
+en:buffalo-ranch-sauce,7,none,milk contains,"unsure: ranch usually has buttermilk, but not every brand"
+en:black-bean-sauce,7,none,gluten contains; wheat contains,"unsure: black bean sauce usually has soy sauce or wheat, but not always"
+en:biscuit-base,7,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:amaretto-flavor,7,none,tree nuts contains,"unsure: amaretto flavor is usually from apricot kernels or artificial, but may have almond"
+en:10-grain-granola,7,none,gluten contains; wheat contains,"unsure: 10-grain blends usually include wheat, and granola oats are often cross-contaminated"
+de:nüsse und nussderivate. (kann mandeln,7,tree nuts contains,tree nuts may contain,"only found in trace lists, so may contain"
+es:cultivos lácteos,6,none,milk contains,old patterns missed it: has milk
+en:yolk-powder,6,none,egg contains,old patterns missed it: has egg
+en:yellow-cupcake,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:yellow-cake-pieces,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:wonton,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:white-chocolate-marshmallow-bits,6,none,milk contains,"unsure: probably coated in white chocolate, which usually has milk"
+en:whet,6,none,gluten contains; wheat contains,"unsure: probably a typo for ""wheat"""
+en:vegetable-potstickers,6,none,gluten contains; wheat contains,unsure: potsticker wrappers are usually wheat
+en:vanilla-sandwich-cookie,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:vanilla-cake,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:unbromated-and-unenriched,6,none,gluten contains; wheat contains,"unsure: probably cut off from an unbromated, unenriched wheat flour"
+en:ultra-thin-crust,6,none,gluten contains; wheat contains,unsure: crust not described; usually wheat
+en:tillamook,6,none,milk contains,"unsure: Tillamook is a dairy brand, mostly cheese and ice cream"
+en:thick-fudge-swirls,6,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:thick-fudge,6,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:teriyaki powder,6,none,gluten contains; wheat contains,unsure: teriyaki seasoning usually has soy sauce made with wheat
+en:tarwe,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:starch-batter,6,none,gluten contains; wheat contains,unsure: batter not described; usually wheat
+en:sprouted-grain-blend,6,none,gluten contains; wheat contains,unsure: grains not named; sprouted grain blends usually include wheat
+en:soy-sauce-soybeans,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:soy sauce water,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:salted-sesame-sticks,6,sesame contains,gluten contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:sahne,6,none,milk contains,old patterns missed it: has milk
+en:rotini,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:rich-flour,6,none,gluten contains; wheat contains,"unsure: probably cut off from ""enriched flour"""
+en:reduced-in-minerals,6,none,milk contains,"unsure: probably cut off from ""whey reduced in minerals"""
+en:red-velvet-cake-pieces,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:red-skin-mashed-potatoes,6,none,milk contains,"unsure: mashed potatoes usually have milk or butter, but not always"
+en:red-leicester,6,none,milk contains,old patterns missed it: has milk
+en:ranch-mix,6,none,milk contains,"unsure: ranch mixes usually have buttermilk powder, but not always"
+en:praline-peanuts,6,peanut contains; tree nuts contains,peanut contains,peanut pralines; no tree nut named
+en:pot-stickers,6,none,gluten contains; wheat contains,unsure: potsticker wrappers are usually wheat
+en:pasteurized process swiss,6,none,milk contains,old patterns missed it: has milk
+en:pasta-shells,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:oatmeal-cookies,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:natural-beef-gravy,6,none,gluten contains; wheat contains,"unsure: gravy is usually thickened with wheat flour, but not always"
+en:mushroom-soy-sauce,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:multigrain-sub-roll,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:mleko,6,none,milk contains,old patterns missed it: has milk
+en:mini-chocolate-chip-cookies,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:mafalda-pasta,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:lour,6,none,gluten contains; wheat contains,"unsure: probably cut off from ""flour""; in the US plain flour usually means wheat"
+en:loaded-mashed-potatoes,6,none,milk contains,"unsure: loaded mashed potatoes usually have cheese, butter or sour cream"
+en:live active sourdough,6,none,gluten contains; wheat contains,unsure: sourdough starters are usually wheat or rye flour
+en:knot-roll,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:imitation-lobster,6,none,egg contains; gluten contains; wheat contains,"unsure: imitation seafood usually has wheat starch and egg white, but recipes vary"
+en:ilk,6,none,milk contains,"unsure: probably cut off from ""milk"""
+en:hydrolyzed-gluten,6,none,gluten contains; wheat contains,unsure: gluten source not named; usually wheat
+en:honey roasted sesame sticks,6,sesame contains,gluten contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:hoagie-roll,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:hazlenuts,6,none,tree nuts contains,old patterns missed it: has tree nuts
+en:harina enriquecida,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:ground-bean-sauce,6,none,gluten contains; wheat contains,"unsure: ground bean sauce usually has wheat flour, but not always"
+en:general-tso-s-sauce,6,none,gluten contains; wheat contains,unsure: General Tso's sauce usually has soy sauce made with wheat
+en:garlic-ginger-wonton-strips,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:fudge-topping,6,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:fudge-piece,6,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:fudge-marble,6,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:fudge swirl,6,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:frozen-yolk-mix,6,none,egg contains,old patterns missed it: has egg
+en:fluff,6,none,egg contains,"unsure: probably marshmallow fluff, which usually has egg white"
+en:enriched-rotini-pasta,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:enriched-four,6,none,gluten contains; wheat contains,"unsure: probably a typo for ""enriched flour"""
+en:egg-free-pasta-noodles,6,none,gluten contains; wheat contains,unsure: pasta type not named; usually wheat
+en:dumpling,6,none,gluten contains; wheat contains,"unsure: dumpling wrappers are usually wheat, but not always"
+en:dry-roux-mix,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:double-gloucester,6,none,milk contains,old patterns missed it: has milk
+en:ditalini-pasta,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:custard-powder,6,milk contains,none,custard powder is usually cornstarch with flavor and color (marked unsure)
+en:crunchy-coated-peanuts,6,peanut contains,gluten contains; peanut contains; wheat contains,"unsure: coated peanuts usually have a wheat flour coating, but not always"
+en:cooked-rotini-pasta,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cooked-potato-gnocchi,6,none,gluten contains; wheat contains,unsure: potato gnocchi usually also has wheat flour
+en:cooked-lasagna-noodles,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cooked-fettuccine-pasta,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cooked-cavatappi,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cones,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cocoa-buttera-a-a,6,milk contains,none,"cocoa butter (typo), not dairy butter"
+en:chocolate-fudge-sauce,6,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:chocolate-flavored-wafer,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chocolate-flavored-cookie-pieces,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chocolate-cookie-crumble,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chocolate-cake-base,6,none,gluten contains; wheat contains,unsure: probably cake made with wheat flour
+en:chocolate-brownie-pieces,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cheesy-garlic-bread-seasoning,6,wheat contains,milk contains,"a seasoning for garlic bread, not bread itself; cheese is the likely allergen (marked unsure)"
+en:cheesy-blend,6,none,milk contains,"unsure: ""cheesy"" blend may be real cheese or a dairy-free flavor"
+en:cheese-stuffed-shells,6,milk contains,gluten contains; milk contains; wheat contains,old patterns missed it: has wheat
+en:cheese crackers,6,milk contains,gluten contains; milk contains; wheat contains,old patterns missed it: has wheat
+en:candlenut,6,none,tree nuts contains,unsure: candlenut (kukui nut) is sometimes treated as a tree nut
+en:cake crunch,6,none,gluten contains; wheat contains,unsure: cake crunch pieces are usually made from wheat cake crumbs
+en:butternut-squash-ravioli,6,none,gluten contains; milk contains; wheat contains,"unsure: ravioli pasta is usually wheat, and fillings often have cheese"
+en:butter-peas,6,milk contains,none,butter peas are a kind of bean
+en:bulgogi-sauce,6,none,gluten contains; wheat contains,unsure: bulgogi sauce usually has soy sauce made with wheat
+en:bottom-crust,6,none,gluten contains; wheat contains,unsure: crust not described; usually wheat
+en:bleu,6,none,milk contains,"unsure: probably cut off from ""bleu cheese"""
+en:birthday-cake,6,none,gluten contains; wheat contains,unsure: cake not described; usually wheat
+en:beyond-chicken-strips,6,none,gluten contains; wheat contains,unsure: Beyond chicken products are made with wheat gluten
+en:battered with,6,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:batter mix,6,none,gluten contains; wheat contains,unsure: batter mix not described; usually wheat
+en:basil pesto,6,none,milk contains; tree nuts contains,"unsure: pesto usually has parmesan and pine nuts, but some don't"
+en:baking-blend,6,none,gluten contains; wheat contains,unsure: baking blend not described; usually wheat flour
+en:baby-butter,6,milk contains,none,"cut off from ""baby butter lettuce"""
+en:ancient-grains,6,none,gluten contains; wheat contains,unsure: grains not named; ancient grain blends sometimes include spelt or khorasan wheat
+en:amendoim,6,none,peanut contains,old patterns missed it: has peanut
+de:sesamsamen und sesamsamenerzeugnisse,6,sesame contains,sesame may contain,"only found in trace lists, so may contain"
+es:nueces de árbol,5,tree nuts contains,tree nuts may contain,"only found in trace lists, so may contain"
+en:yellow-corn-cones,5,none,gluten contains; wheat contains,unsure: ice cream cones usually have wheat flour even when they include corn
+en:yakisoba-noodles,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:wonton strips,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:wholesome-flour-mix,5,none,gluten contains; wheat contains,unsure: flour type not named; usually wheat
+en:white-sub-bun,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:white-fudge-drizzle,5,none,milk contains,"unsure: white fudge coatings usually have milk, but not always"
+en:white-chocolate-confectionery-coating,5,none,milk contains,old patterns missed it: has milk
+en:white-chocolate-compound,5,none,milk contains,old patterns missed it: has milk
+en:white-candy-melts-candy,5,none,milk contains,"unsure: candy melts often have milk, but not all"
+en:whipped-salad-dressing,5,none,egg contains,old patterns missed it: has egg
+en:whip-topping-base,5,none,milk contains,"unsure: whipped toppings often have sodium caseinate, but not all"
+en:wheat-rye-corn-oats-millet-triticale-brown-rice-barley-buckwheat,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:wheat-oats-rye-barley-corn-millet-triticale-bulgur-wheat-buckwheat-quinoa-amaranth-sorghum,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:whea-flour,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:what,5,none,gluten contains; wheat contains,"unsure: probably a typo for ""wheat"""
+en:wasabi-soy-seasoning,5,none,gluten contains; wheat contains,unsure: soy sauce powder is usually made with wheat
+en:wasabi soy sauce seasoning,5,none,gluten contains; wheat contains,unsure: soy sauce powder is usually made with wheat
+en:waffle-cookie,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:vital,5,none,gluten contains; wheat contains,"unsure: probably cut off from ""vital wheat gluten"""
+en:vanilla-cookie-pieces,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:unbleached-and-unbromated,5,none,gluten contains; wheat contains,"unsure: probably cut off from an unbleached, unbromated wheat flour"
+en:tzatziki-sauce,5,none,milk contains,old patterns missed it: has milk
+en:tomato-wrap,5,none,gluten contains; wheat contains,unsure: probably a flour tortilla
+en:toffee-chips,5,none,milk contains,old patterns missed it: has milk
+en:toffee-center,5,none,milk contains,old patterns missed it: has milk
+en:toasted-coated-multigrain-cereal,5,none,gluten contains; wheat contains,unsure: grains not named; multigrain cereals usually include wheat
+en:tamari-roasted-sunflower-seeds,5,none,gluten contains; wheat contains,"unsure: tamari is often wheat-free, but some brands brew it with wheat"
+en:sugar-cookies,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sugar-cookie-dough,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:sugar-cone-pieces,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:stroganoff-sauce,5,none,milk contains,"unsure: stroganoff sauce usually has sour cream, but not always"
+en:sprouted-grain,5,none,gluten contains; wheat contains,unsure: grain not named; sprouted grain products usually include wheat
+en:spinach-wrap,5,none,gluten contains; wheat contains,unsure: probably a flour tortilla
+en:speculoos,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:spaghetti-squash,5,wheat contains,none,"a squash, not pasta"
+en:soybean-sauce-powder,5,none,gluten contains; wheat contains,"unsure: probably soy sauce powder, which is usually made with wheat"
+en:soy-sauce-packet,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:soy-cheeze,5,none,milk contains,"unsure: soy cheese is meant to be dairy-free, but some brands add casein"
+en:soy sauce seasoning,5,none,gluten contains; wheat contains,unsure: soy sauce powder is usually made with wheat
+en:sour starter,5,none,gluten contains; wheat contains,unsure: sourdough starters are usually wheat or rye flour
+en:soba,5,none,gluten contains; wheat contains,"unsure: soba is buckwheat noodles, but most brands also add wheat flour"
+en:slider-bun,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:skim-milk-cocoa-butter,5,none,milk contains,old patterns missed it: has milk
+en:sesamemilk,5,milk contains; sesame contains,sesame contains,"sesame milk is a plant milk, not dairy"
+en:sandwich-cookies,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:romano-caesar-dressing,5,milk contains,egg contains; milk contains,"unsure: Caesar dressing usually has egg and cheese, but not every brand"
+en:reese's peanut butter cup pieces,5,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:rbst-free-half-and-half,5,none,milk contains,old patterns missed it: has milk
+en:ranch-seasoning-blend,5,none,milk contains,"unsure: ranch seasoning usually has buttermilk powder, but not always"
+en:ranch-flavor,5,none,milk contains,"unsure: ranch flavor usually has buttermilk powder, but not always"
+en:pure-ancient-grains-blend,5,none,gluten contains; wheat contains,unsure: grains not named; ancient grain blends sometimes include spelt or khorasan wheat
+en:pudding,5,none,milk contains,"unsure: pudding is usually made with milk, but not always"
+en:predusted with,5,none,gluten contains; wheat contains,unsure: predust not described; usually wheat flour
+en:potato-gnocchi,5,none,gluten contains; wheat contains,unsure: potato gnocchi usually also has wheat flour
+en:ponzu-sauce,5,none,gluten contains; wheat contains,unsure: ponzu usually has soy sauce made with wheat
+en:plant-based-chicken-alternative,5,none,gluten contains; wheat contains,"unsure: plant-based chicken is often made with wheat gluten, but not always"
+en:pizza-dough-mix,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:pizza-base,5,none,gluten contains; wheat contains,unsure: pizza base not described; usually wheat crust
+en:pistaches,5,none,tree nuts contains,old patterns missed it: has tree nuts
+en:peanut-butter-cup,5,peanut contains,milk contains; peanut contains,old patterns missed it: has milk
+en:pean,5,none,peanut contains,"unsure: probably cut off from ""peanut"""
+en:pasteurized cow's,5,none,milk contains,old patterns missed it: has milk
+en:part-skim,5,none,milk contains,"unsure: probably cut off from ""part-skim milk"" or ""part-skim mozzarella"""
+en:pancakes,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:orzo pasta,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:oreo-cookie-crumbs,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:oatmeal-crumble,5,none,gluten contains; wheat contains,unsure: crumble toppings usually have wheat flour as well as oats
+en:oat butter,5,milk contains,none,"oat-based spread, not dairy; left as none to match oat milk"
+en:nuts-a-a-a,5,none,tree nuts contains,old patterns missed it: has tree nuts
+en:nut-coater,5,none,tree nuts contains,unsure: nuts not named; could be peanut instead
+en:not-from-dairy,5,milk contains,none,says it is not from dairy
+en:nonfat-sherbet,5,none,milk contains,old patterns missed it: has milk
+en:nondairy creamer,5,none,milk contains,unsure: non-dairy creamers often still have sodium caseinate from milk
+en:nissin-foods,5,none,gluten contains; wheat contains,unsure: Nissin is a noodle brand; its noodles are usually wheat
+en:nine-grain-mix,5,none,gluten contains; wheat contains,unsure: grains not named; multigrain mixes usually include wheat
+en:natural-and-artificial-butter-flavour,5,none,milk contains,unsure: butter flavor may or may not come from milk
+en:naan-dippers,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:mushroom-gravy,5,none,gluten contains; wheat contains,"unsure: gravy is usually thickened with wheat flour, but not always"
+en:multi-grain-mix,5,none,gluten contains; wheat contains,unsure: grains not named; multigrain mixes usually include wheat
+en:moose tracks fudge swirl,5,none,milk contains,"unsure: fudge usually has milk or butter, but not always"
+en:molkenerzeugnis,5,none,milk contains,old patterns missed it: has milk
+en:mini-buns,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:milk-cocoa-butter,5,none,milk contains,old patterns missed it: has milk
+en:made-in-a-bakery-that-may-also-use-tree-nuts,5,tree nuts contains,tree nuts may contain,"facility warning, so may contain"
+en:made-from-sheep-s,5,none,milk contains,"unsure: probably cut off from ""made from sheep's milk"""
+en:made in a bakery that may also use milk,5,milk contains,milk may contain,"facility warning, so may contain"
+en:m-m-chocolates,5,none,milk contains,old patterns missed it: has milk
+en:leite,5,none,milk contains,old patterns missed it: has milk
+en:lavosh,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:korean-style-bbq-sauce,5,none,gluten contains; wheat contains,unsure: Korean BBQ sauce usually has soy sauce made with wheat
+en:kaiser-roll,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:jaja,5,none,egg contains,old patterns missed it: has egg
+en:hydrogenated-non-dairy-creamer,5,none,milk contains,unsure: non-dairy creamers often still have sodium caseinate from milk
+en:honey sesame sticks,5,sesame contains,gluten contains; sesame contains; wheat contains,old patterns missed it: has wheat
+en:harina-enriquecida-sin-blanquear,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:gnocchi-flour-blend,5,none,gluten contains; wheat contains,unsure: flour type not named; usually wheat
+en:gnocchi,5,none,gluten contains; wheat contains,"unsure: gnocchi usually has wheat flour, but some are gluten-free"
+en:gluten-de-ble,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:ganache,5,none,milk contains,old patterns missed it: has milk
+en:fudge-brownies,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:frozen-dessert,5,none,milk contains,"unsure: frozen desserts usually have milk, but some are dairy-free"
+en:frittata,5,none,egg contains,old patterns missed it: has egg
+en:fried-rice-seasoning,5,none,gluten contains; wheat contains,unsure: fried rice seasoning usually has soy sauce made with wheat
+en:french-roll,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:french-baguette,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:focaccia,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:flour-starch-blend,5,none,gluten contains; wheat contains,unsure: flour type not named; usually wheat
+en:fettuccini-pasta,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:fettuccine-pasta,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:fermented-soybean-sauce,5,none,gluten contains; wheat contains,"unsure: probably soy sauce, which is usually made with wheat"
+en:farine-de-ble-enrichie,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:farine,5,none,gluten contains; wheat contains,"unsure: French for flour; flour type not named, usually wheat"
+en:enriched-whet-flour,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:enriched-what-flour,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:enriched high gluten flour,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:english-muffin-base,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:elbows,5,none,gluten contains; wheat contains,"unsure: probably elbow macaroni, usually wheat"
+en:elbow-noodles,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:ei,5,none,egg contains,old patterns missed it: has egg
+en:eggnog,5,egg contains,egg contains; milk contains,old patterns missed it: has milk
+en:ditalini,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:danish-pastry,5,none,gluten contains; milk contains; wheat contains,"old patterns missed it: has milk, wheat"
+en:cupcakes,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:crushed-chocolate-cookies,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:crostini-cracker,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:crostini,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:crispy-noodles,5,none,gluten contains; wheat contains,unsure: noodle type not named; usually wheat
+en:creme-cake-base,5,none,gluten contains; wheat contains,unsure: probably cake made with wheat flour
+en:creamy,5,milk contains,none,"describes texture, not an ingredient"
+en:cow's,5,none,milk contains,"unsure: probably cut off from ""cow's milk"""
+en:country-gravy-mix,5,none,gluten contains; milk contains; wheat contains,"unsure: country gravy mix usually has flour and milk powder, but not always"
+en:cookie-mix-ingredients,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cookie-crumb-swirl,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cookie dough,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cooked-salisbury-steak,5,none,gluten contains; wheat contains,"unsure: Salisbury steak usually has breadcrumbs, but not always"
+en:cooked-meatloaf,5,none,egg contains; gluten contains; wheat contains,"unsure: meatloaf usually has breadcrumbs and egg, but recipes vary"
+en:cooked-kashi-pilaf,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:cooked-cheese-tortellini,5,milk contains,egg contains; gluten contains; milk contains; wheat contains,"unsure: tortellini pasta usually has egg, but not always"
+en:cooked-9-grain-pasta,5,none,gluten contains; wheat contains,unsure: grains not named; multigrain pasta usually includes wheat
+en:contains-2-and-less-soy-sauce,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:contains milk ingredients,5,milk contains,milk may contain,"only found in trace lists, so may contain"
+en:coconut-shrimp,5,none,gluten contains; wheat contains,unsure: coconut shrimp is usually breaded with wheat flour
+en:cocoa-butter-dextrose,5,milk contains,none,"cocoa butter and dextrose, no dairy named"
+en:ciabatta,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chocolate-toffee-pieces,5,none,milk contains,old patterns missed it: has milk
+en:chocolate-frozen-dessert,5,none,milk contains,"unsure: frozen desserts usually have milk, but some are dairy-free"
+en:chocolate-flavored-cookies,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chocolate-creme-cookies,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chocolate cookie pieces,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:chipotle-ranch-sauce,5,none,egg contains; milk contains,"unsure: ranch usually has buttermilk and egg, but not every brand"
+en:cheese tortellini,5,milk contains,egg contains; gluten contains; milk contains; wheat contains,"unsure: tortellini pasta usually has egg, but not always"
+en:buttermilk-biscuits,5,milk contains,gluten contains; milk contains; wheat contains,old patterns missed it: has wheat
+en:buffalo-ranch-seasoning,5,none,milk contains,"unsure: ranch seasoning usually has buttermilk powder, but not always"
+en:buffalo-ranch-dressing,5,none,egg contains; milk contains,"unsure: ranch usually has buttermilk and egg, but not every brand"
+en:brownie-bites,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:brown-gravy-mix,5,none,gluten contains; wheat contains,"unsure: gravy mixes are usually thickened with wheat flour, but not all"
+en:black-soy-sauce,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:beef-gravy,5,none,gluten contains; wheat contains,"unsure: gravy is usually thickened with wheat flour, but not always"
+en:bagel-thin,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:bagel-half,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:asian-style-noodles,5,none,gluten contains; wheat contains,unsure: noodle type not named; usually wheat
+en:artisan-flour,5,none,gluten contains; wheat contains,unsure: flour type not named; usually wheat
+en:animal-crackers,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:amidon-de-ble,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:all-purpose-mix,5,none,gluten contains; wheat contains,unsure: baking mix not described; usually wheat flour
+en:all-natural-white-chocolate,5,none,milk contains,old patterns missed it: has milk
+en:acini-di-pepe,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
+en:9-whole-grain-flour,5,none,gluten contains; wheat contains,unsure: grains not named; multigrain flours usually include wheat
+en:8-grain-mix,5,none,gluten contains; wheat contains,unsure: grains not named; multigrain mixes usually include wheat
