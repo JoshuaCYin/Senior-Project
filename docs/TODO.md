@@ -2,11 +2,12 @@
 
 ## Allergen lookup table
 
-- Review the AI's labels: go through docs/tag-review-unsure.csv and docs/tag-review-disagreements.csv, starting with the most used tags.
-- Decide on en:flour: it's none for now because OFF adds it to every flour, but plain "flour" usually means wheat.
-- Decide on oat milk: oat milk, oat base and oat milk powder are none to match the rule, but oats are usually "may contain" gluten.
+- Spot check the AI's labels when there's time: docs/tag-review-unsure.csv and docs/tag-review-disagreements.csv, most used tags first. Not blocking.
 - Work through docs/tutorial-tag-lookup.md: add gluten, make the lookup tables, and switch the import over.
 - Compare the new results to the old rules: backend/lookup/old_allergen_rules.json has the old patterns.
+- Carry "unsure" through to products: a product's allergen should be low confidence when only unsure tags flagged it. Needs a column on product_allergen and a change to the step 5 inserts.
+- Add soy, fish and shellfish to seed.sql: the lookup file already has rows for them, so the import may fail or skip them until the allergen table has these names.
+- Spot check the soy, fish and shellfish unsure tags: docs/tag-review-unsure-new.csv, most used first. Not blocking.
 
 ## Import script
 
@@ -18,3 +19,4 @@
 
 - Show "no allergen found", not "safe": some products have missing or messy ingredient data.
 - Let users choose if refined oils count: for now peanut oil always counts as peanut.
+- Let users avoid a specific ingredient: for things that aren't one of the main allergens, like coconut, mustard or cilantro. The app would check product tags directly against the tag table.

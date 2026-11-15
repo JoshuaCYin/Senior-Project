@@ -55,7 +55,9 @@ You already know this shape. Look at ingredient and ingredient_allergen in your 
 What each needs:
 
 - tag: an id, the source (like 'Open Food Facts', since other data sources might use different tags), and the tag name. The same tag name shouldn't appear twice for the same source.
-- tag_allergen: the tag's id, the allergen's id, and the level ('contains' or 'may contain'). A tag can have more than one allergen (en:milk-chocolate-peanuts is milk and peanut), but the same tag and allergen pair shouldn't appear twice.
+- tag_allergen: the tag's id, the allergen's id, the level ('contains' or 'may contain'), and whether the label is unsure. A tag can have more than one allergen (en:milk-chocolate-peanuts is milk and peanut), but the same tag and allergen pair shouldn't appear twice.
+
+About "unsure": some tags don't say what they're made of, like en:crust or en:flour. Those are flagged with the likely allergen, but marked unsure, so later the app can show a lower confidence instead of hiding the product completely. Most tags aren't unsure, so it should default to false.
 
 Try it: make a new migration with `npx supabase migration new allergen_lookup`, then write both create table statements in the file it makes. Copy the style of your existing tables.
 
@@ -65,6 +67,7 @@ Try it: make a new migration with `npx supabase migration new allergen_lookup`, 
 - For tag_allergen, the pair of ids can be the primary key, like in ingredient_allergen.
 - Use `on delete cascade` on the tag id, so deleting a tag also deletes its allergen rows.
 - Copy the level check from product_allergen.
+- A yes/no column is a `boolean`. `default false` fills it in when you don't give a value.
 
 </details>
 
@@ -81,6 +84,7 @@ Try it: make a new migration with `npx supabase migration new allergen_lookup`, 
         tag_id      bigint not null references tag(id) on delete cascade,
         allergen_id bigint not null references allergen(id) on delete cascade,
         level       text not null check (level in ('contains', 'may contain')),
+        unsure      boolean not null default false,
         primary key (tag_id, allergen_id)
     );
 
@@ -108,48 +112,129 @@ The SQL for removing a table is `drop table`. Wait until step 6 if you want to c
 
 ## Step 4: load the lookup file in the import script
 
-The classifying session makes backend/lookup/tag_allergen.csv. It has one row per tag and allergen pair:
+Before you start: steps 2 and 3 need to be applied. Run `npx supabase migration list --local` from the project folder and check that your allergen_lookup migration is there. In Supabase Studio, the tag and tag_allergen tables should exist (empty is fine).
+
+### What this step is for
+
+The classifying session made backend/lookup/tag_allergen.csv. It has one row per tag and allergen pair:
 
     tag,allergen,level,note
     en:whey,milk,contains,
     en:cocoa-butter,none,,
     en:milk-chocolate-peanuts,milk,contains,
     en:milk-chocolate-peanuts,peanut,contains,
+    en:crust,wheat,contains,"unsure: crust type not named; usually wheat (pizza, pie)"
 
-The import needs to put that into the tag and tag_allergen tables each time it runs, before it builds product_allergen.
+A row is unsure when its note is filled in. The note is for people to read, so the database only needs the yes/no.
 
-Good news: you already solved the hard part. Products are loaded with a staging table (DuckDB copies the file into a plain table, then Postgres moves the rows into the real one). Do the same thing here.
+Right now that's just a file. Step 5 builds product_allergen by joining products to the tag and tag_allergen tables, so those tables need to be filled from the file first. That's all this step does: copy the CSV into those two tables, every time the import runs.
 
-Try it, in this order, inside the same transaction as the product swap:
+### The trick you already know
 
-1. Make a staging table from the CSV (DuckDB can read a CSV like `FROM 'lookup/tag_allergen.csv'`, just like it reads the parquet file).
-2. Delete the old Open Food Facts rows from tag. Because of the cascade, their tag_allergen rows go too.
-3. Insert each distinct tag name into tag.
-4. Insert into tag_allergen by joining the staging rows to tag (to get tag ids) and to allergen (to turn the name "milk" into its id). Skip rows where allergen is 'none'.
-5. Drop the staging table at the end, like the product one.
+You load products in two moves:
+
+1. DuckDB copies the file into a plain staging table in Postgres (product_import_staging).
+2. Postgres moves the rows from staging into the real table (product), inside the transaction.
+
+The lookup works exactly the same way. The only difference is there are two real tables to fill instead of one.
+
+### Where each piece goes
+
+Your script is in this order right now. The NEW lines are what you add in this step:
+
+    connect to the database
+
+    -- staging tables (before conn.begin())
+    drop + create product_import_staging         (already there)
+    drop + create tag_import_staging             NEW, piece 1
+
+    conn.begin()
+    delete + insert products                     (already there)
+    delete old Open Food Facts tags              NEW, piece 2
+    insert tags                                  NEW, piece 3
+    insert tag_allergen                          NEW, piece 4
+    delete + insert product_allergen             (step 5 rewrites these)
+    conn.commit()
+
+    -- clean up
+    drop product_import_staging                  (already there)
+    drop tag_import_staging                      NEW, piece 5
+
+Why this order:
+
+- Staging goes before conn.begin(), just like the product staging table. Making it is DuckDB copying a file, not a change to your real data. If the import crashes, the leftover staging table doesn't hurt anything, since the "drop table if exists" at the start clears it next time.
+- Pieces 2 to 4 go inside the transaction, after the products and before product_allergen. Inside the transaction means a crash can't leave you with an empty lookup. Before product_allergen, because step 5 needs the lookup filled to work.
+- Piece 5 goes after commit, next to the product staging drop.
+
+### Try it
+
+1. Piece 1: copy your two product staging lines (the DROP TABLE IF EXISTS and the CREATE TABLE ... AS SELECT) and change them to make tag_import_staging from the CSV. You only need the columns tag, allergen, level and note.
+2. Piece 2: delete the Open Food Facts rows from tag. Because of the "on delete cascade" you wrote in step 2, their tag_allergen rows are deleted too, so you don't need a second delete.
+3. Piece 3: insert each tag name from staging into tag, with source 'Open Food Facts'.
+4. Piece 4: insert into tag_allergen. Each staging row needs two ids: the tag's id (from the tag table you just filled) and the allergen's id (from the allergen table). Skip rows where allergen is 'none'.
+5. Piece 5: drop tag_import_staging.
+
+Pieces 2 to 4 are Postgres SQL, so each one goes in its own conn.execute("""CALL postgres_execute('pg', $$ ... $$)"""), the same wrapper as your product delete and insert.
 
 <details><summary>Hint</summary>
 
-- Making the staging table works like the product one: `CREATE TABLE pg.public.tag_import_staging AS SELECT tag, allergen, level FROM 'lookup/tag_allergen.csv'`. The path depends on what folder you run from (another reason to fix that TODO).
-- Step 3 needs `SELECT DISTINCT` because a tag with two allergens has two rows.
-- Step 4 joins on two things: `t.name = s.tag AND t.source = 'Open Food Facts'`, and `a.name = s.allergen`. Joining to allergen by name drops 'none' rows on its own, since there's no allergen called 'none'.
+- Path: you run the script from the backend folder. The parquet path starts with ../ because data is one folder up. The lookup folder is inside backend, so its path is just 'lookup/tag_allergen.csv'.
+- Piece 3 needs SELECT DISTINCT, because a tag with two allergens has two rows in the file but should only be in tag once.
+- Piece 4 is an INSERT ... SELECT with two joins: staging to tag on the tag name and source, and staging to allergen on the allergen name. A join only keeps rows that match on both sides, and there's no allergen named 'none', so the none rows drop out on their own.
+- DuckDB reads an empty note as NULL, so unsure is just `s.note IS NOT NULL`, which gives true or false.
 
 </details>
 
-<details><summary>Answer (the SQL for steps 2 to 4, each in its own postgres_execute call)</summary>
+<details><summary>Answer</summary>
 
-    DELETE FROM public.tag WHERE source = 'Open Food Facts'
+Piece 1, right after the product staging table is created:
 
-    INSERT INTO public.tag (source, name)
-    SELECT DISTINCT 'Open Food Facts', lower(tag) FROM public.tag_import_staging
+    conn.sql("DROP TABLE IF EXISTS pg.public.tag_import_staging")
+    conn.sql("""
+        CREATE TABLE pg.public.tag_import_staging AS
+        SELECT tag, allergen, level, note
+        FROM 'lookup/tag_allergen.csv'
+    """)
 
-    INSERT INTO public.tag_allergen (tag_id, allergen_id, level)
-    SELECT t.id, a.id, s.level
-    FROM public.tag_import_staging s
-    JOIN public.tag t ON t.source = 'Open Food Facts' AND t.name = lower(s.tag)
-    JOIN public.allergen a ON a.name = s.allergen
+Pieces 2 to 4, after the product insert and before the product_allergen delete:
+
+    conn.execute("""
+        CALL postgres_execute('pg', $$
+            DELETE FROM public.tag WHERE source = 'Open Food Facts'
+        $$)
+    """)
+    conn.execute("""
+        CALL postgres_execute('pg', $$
+            INSERT INTO public.tag (source, name)
+            SELECT DISTINCT 'Open Food Facts', lower(tag)
+            FROM public.tag_import_staging
+        $$)
+    """)
+    conn.execute("""
+        CALL postgres_execute('pg', $$
+            INSERT INTO public.tag_allergen (tag_id, allergen_id, level, unsure)
+            SELECT t.id, a.id, s.level, s.note IS NOT NULL
+            FROM public.tag_import_staging s
+            JOIN public.tag t ON t.source = 'Open Food Facts' AND t.name = lower(s.tag)
+            JOIN public.allergen a ON a.name = s.allergen
+        $$)
+    """)
+
+Piece 5, after conn.commit(), next to the product staging drop:
+
+    conn.sql("DROP TABLE pg.public.tag_import_staging")
 
 </details>
+
+### Check it
+
+Don't run the full import yet: the product_allergen part still uses allergen_rule, which you dropped in step 3, so it will fail. That's expected, and step 5 fixes it. If you want to test this step alone first, temporarily comment out the product_allergen delete and the two inserts, run the script, and look in Studio:
+
+- tag should have about 23,343 rows.
+- tag_allergen should have about 6,400 rows (every row in the file that isn't 'none').
+- `select count(*) from tag_allergen where unsure` should be about 1,300.
+
+Then uncomment them and move on to step 5.
 
 ## Step 5: build product_allergen from the lookup
 

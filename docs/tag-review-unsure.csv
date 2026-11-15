@@ -1,5 +1,6 @@
 tag,products,label,why_unsure
-en:flour,99574,none,"parent tag OFF adds to every flour (rice, corn, etc.); only ~1,600 products have plain ""flour"" with no specific flour tag, and in the US plain flour usually means wheat"
+en:flour,99574,gluten contains; wheat contains,"OFF adds this tag to every flour, including rice and corn flour, but plain ""flour"" on a US label usually means wheat"
+en:wholemeal-flour,13247,gluten contains; wheat contains,"OFF adds this tag to every whole grain flour, including oat and rice, but plain whole grain flour usually means wheat"
 en:hydrolysed-vegetable-protein,5985,gluten contains; wheat contains,"source plant is not named; often wheat, but can be soy or corn"
 en:dough,5055,gluten contains; wheat contains,dough type not named; usually wheat
 en:crust,2396,gluten contains; wheat contains,"crust type not named; usually wheat (pizza, pie)"
@@ -57,7 +58,6 @@ en:rice-cereal,57,gluten contains,"rice cereal usually has barley malt flavoring
 en:barley-grass-powder,56,gluten may contain,"barley grass has no gluten unless seeds get in, but it's often cross-contaminated"
 en:imitation-crab-meat,55,egg contains; gluten contains; wheat contains,"imitation crab usually has wheat starch and egg white, but recipes vary"
 en:swiss,53,milk contains,"probably cut off from ""swiss cheese"""
-en:oat-base,52,none,"oat base for oat milk; left as none to match oat milk, but oats are usually cross-contaminated with gluten"
 en:wasabi-peas,51,gluten contains; wheat contains,"wasabi peas are usually coated with wheat flour, but not always"
 en:basil-pesto,51,milk contains; tree nuts contains,"pesto usually has parmesan and pine nuts, but some don't"
 en:roll,50,gluten contains; wheat contains,roll type not named; usually a bread roll
@@ -241,7 +241,6 @@ en:unbleached-white,12,gluten contains; wheat contains,"probably cut off from ""
 en:tikka-masala-sauce,12,milk contains,"tikka masala sauce usually has cream or yogurt, but not always"
 en:rice-crispies,12,gluten contains,"rice crisp cereals usually have barley malt, but not always"
 en:oyster sauce,12,gluten contains; wheat contains,"oyster sauce usually has wheat flour, but some brands don't"
-en:oat-milk-powder,12,none,"left as none to match oat milk, but oats are usually cross-contaminated with gluten"
 en:nut-flour-blend,12,tree nuts contains,nuts not named; the blend might include peanut
 en:non-dairy creamer,12,milk contains,non-dairy creamers often still have sodium caseinate from milk
 en:natural-pecan-flavor,12,tree nuts contains,pecan flavor may or may not come from pecans

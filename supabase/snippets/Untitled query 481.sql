@@ -1,4 +1,4 @@
-select tag, count(*)
-from product, unnest(ingredient_tags) as tag
-where tag like '%milk%' or tag like '%whey%'   -- change these words for each allergen
-group by tag order by count(*) desc limit 50;
+SELECT allergen.name, COUNT(allergen.name), product_allergen.level
+FROM allergen
+JOIN product_allergen on product_allergen.allergen_id = allergen.id
+GROUP BY allergen.name, product_allergen.level;

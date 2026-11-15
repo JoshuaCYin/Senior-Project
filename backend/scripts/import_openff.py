@@ -38,6 +38,21 @@ conn.sql("""
 """)
 print("[IMPORT] Staging table created.")
 
+# tag staging table
+print("[IMPORT] Creating Tag Staging Table...")
+conn.sql("DROP TABLE IF EXISTS pg.public.tag_import_staging")
+conn.sql("""
+    CREATE TABLE pg.public.tag_import_staging AS
+    SELECT
+        tag,
+        allergen,
+        level,
+        note
+    FROM 'lookup/tag_allergen.csv'
+""")
+print("[IMPORT] Tag staging table created.")
+
+# ======= product Operations =======
 # Swap the old import for the new one in a single transaction, so a failed insert
 # can't leave the table empty. The delete also lets the script be rerun safely.
 print("[IMPORT] Swapping old import for new one (so failed insert doesn't leave the table empty)...")
@@ -77,9 +92,55 @@ conn.execute("""
 """)
 print("[IMPORT] Swap complete.")
 
+# ======= tag Operations =======
+# clear existing open food facts rows to avoid duplication
+print("[IMPORT] Deleting Open Food Facts Rows from tag...")
+conn.execute("""
+    CALL postgres_execute('pg', $$
+        DELETE FROM public.tag WHERE data_source = 'Open Food Facts'
+    $$)
+""")
+
+conn.execute("""
+    CALL postgres_execute('pg', $$
+        INSERT INTO public.tag (
+            data_source,
+            tag_name
+        )
+        SELECT DISTINCT
+            'Open Food Facts',
+            lower(tag)
+        FROM public.tag_import_staging
+    $$)
+""")
+
+conn.execute("""
+    CALL postgres_execute('pg', $$
+        INSERT INTO public.tag_allergen ( 
+            tag_id,
+            allergen_id,
+            level,
+            is_unsure
+        )
+        SELECT
+            t.id,
+            a.id,
+            s.level,
+            s.note IS NOT NULL
+        FROM public.tag_import_staging s
+        JOIN public.tag t ON t.data_source = 'Open Food Facts' AND t.tag_name = lower(s.tag)
+        JOIN public.allergen a ON s.allergen = a.name
+    $$)
+""")
+
+conn.execute("""
+    CALL postgres_execute('pg', $$
+        ANALYZE public.product, public.tag, public.tag_allergen
+    $$)
+""")
+
+# ======= product_allergen Operations =======
 print("[IMPORT] Creating product allergen table...")
-# These run inside Postgres, one command per postgres_execute call, in the same
-# transaction as the swap above.
 conn.execute("""
     CALL postgres_execute('pg', $$
         DELETE FROM public.product_allergen
@@ -89,40 +150,52 @@ conn.execute("""
 # contains: matched on ingredients or OFF's allergen tags
 conn.execute("""
     CALL postgres_execute('pg', $$
-        INSERT INTO public.product_allergen (product_id, allergen_id, level)
-        SELECT DISTINCT p.id, r.allergen_id, 'contains'
+        INSERT INTO public.product_allergen (
+            product_id,
+            allergen_id,
+            level
+        )
+        SELECT DISTINCT
+            p.id,
+            ta.allergen_id,
+            'contains'
         FROM public.product p
         CROSS JOIN LATERAL UNNEST(COALESCE(p.ingredient_tags, '{}') || COALESCE(p.allergen_tags, '{}')) AS t(tag)
-        JOIN public.allergen_rule r
-            ON r.source = p.data_source AND r.kind = 'include' AND t.tag LIKE r.pattern
-        WHERE NOT EXISTS (
-            SELECT 1
-            FROM public.allergen_rule x
-            WHERE x.allergen_id = r.allergen_id
-                AND x.source = r.source
-                AND x.kind = 'exclude'
-                AND t.tag LIKE x.pattern
-        )
+        JOIN public.tag tg ON tg.data_source = p.data_source
+         AND tg.tag_name = lower(t.tag)
+        JOIN public.tag_allergen ta ON ta.tag_id = tg.id
+        WHERE ta.level = 'contains'
     $$)
 """)
 
 # may contain: matched on trace tag, skipped if already marked as contains
 conn.execute("""
     CALL postgres_execute('pg', $$
-        INSERT INTO public.product_allergen (product_id, allergen_id, level)
-        SELECT DISTINCT p.id, r.allergen_id, 'may contain'
+        INSERT INTO public.product_allergen (
+            product_id,
+            allergen_id,
+            level
+        )
+        SELECT DISTINCT
+            p.id,
+            ta.allergen_id,
+            'may contain'
+        FROM public.product p
+        CROSS JOIN LATERAL UNNEST(COALESCE(p.ingredient_tags, '{}') || COALESCE(p.allergen_tags, '{}')) AS t(tag)
+        JOIN public.tag tg ON tg.data_source = p.data_source
+         AND tg.tag_name = lower(t.tag)
+        JOIN public.tag_allergen ta ON ta.tag_id = tg.id
+        WHERE ta.level = 'may contain'
+        UNION
+        SELECT DISTINCT
+            p.id,
+            ta.allergen_id,
+            'may contain'
         FROM public.product p
         CROSS JOIN LATERAL UNNEST(COALESCE(p.trace_tags, '{}')) AS t(tag)
-        JOIN public.allergen_rule r
-            ON r.source = p.data_source AND r.kind = 'include' AND t.tag LIKE r.pattern
-        WHERE NOT EXISTS (
-            SELECT 1
-            FROM public.allergen_rule x
-            WHERE x.allergen_id = r.allergen_id
-                AND x.source = r.source
-                AND x.kind = 'exclude'
-                AND t.tag LIKE x.pattern
-        )
+        JOIN public.tag tg ON tg.data_source = p.data_source
+         AND tg.tag_name = lower(t.tag)
+        JOIN public.tag_allergen ta ON ta.tag_id = tg.id
         ON CONFLICT (product_id, allergen_id) DO NOTHING
     $$)
 """)
@@ -130,5 +203,6 @@ print("[IMPORT] Product allergen table created.")
 
 conn.commit()
 conn.sql("DROP TABLE pg.public.product_import_staging")
+conn.sql("DROP TABLE pg.public.tag_import_staging")
 
 print(conn.execute("SELECT count(*) FROM pg.public.product").fetchone()[0], "products imported (total)")

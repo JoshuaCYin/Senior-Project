@@ -1,5 +1,7 @@
 tag,products,old_rule,new_label,reason
 en:gluten,100915,wheat contains,gluten contains,"OFF's gluten tag also covers barley, rye and oats, so it's gluten only now (decided by the owner)"
+en:flour,99574,none,gluten contains; wheat contains,"unsure: OFF adds this tag to every flour, including rice and corn flour, but plain ""flour"" on a US label usually means wheat"
+en:wholemeal-flour,13247,none,gluten contains; wheat contains,"unsure: OFF adds this tag to every whole grain flour, including oat and rice, but plain whole grain flour usually means wheat"
 en:soy-sauce,7784,none,gluten contains; wheat contains,old patterns missed it: has wheat
 en:hydrolysed-vegetable-protein,5985,none,gluten contains; wheat contains,"unsure: source plant is not named; often wheat, but can be soy or corn"
 en:dough,5055,none,gluten contains; wheat contains,unsure: dough type not named; usually wheat
@@ -868,7 +870,7 @@ en:pancakes,5,none,gluten contains; wheat contains,old patterns missed it: has w
 en:orzo pasta,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
 en:oreo-cookie-crumbs,5,none,gluten contains; wheat contains,old patterns missed it: has wheat
 en:oatmeal-crumble,5,none,gluten contains; wheat contains,unsure: crumble toppings usually have wheat flour as well as oats
-en:oat butter,5,milk contains,none,"oat-based spread, not dairy; left as none to match oat milk"
+en:oat butter,5,milk contains,gluten may contain,"oat-based spread, not dairy; left as none to match oat milk"
 en:nuts-a-a-a,5,none,tree nuts contains,old patterns missed it: has tree nuts
 en:nut-coater,5,none,tree nuts contains,unsure: nuts not named; could be peanut instead
 en:not-from-dairy,5,milk contains,none,says it is not from dairy

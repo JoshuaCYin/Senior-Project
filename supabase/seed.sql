@@ -1,4 +1,4 @@
-insert into allergen (name) values ('milk'), ('egg'), ('wheat'), ('tree nuts'), ('peanut'), ('sesame');
+insert into allergen (name) values ('milk'), ('egg'), ('wheat'), ('gluten'), ('tree nuts'), ('peanut'), ('sesame'), ('soy'), ('fish'), ('shellfish');
 
 insert into ingredient (name) values ('walnut'), ('flour'), ('egg'), ('banana'), ('rice');
 

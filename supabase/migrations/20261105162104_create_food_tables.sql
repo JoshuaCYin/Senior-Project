@@ -15,6 +15,22 @@ create table ingredient_allergen (
     primary key (ingredient_id, allergen_id)
 );
 
+create table tag (
+    id          bigint generated always as identity primary key,
+    data_source text not null,
+    tag_name    text not null,
+    unique (data_source, tag_name)
+);
+
+-- tag_allergen: which allergens a tag means, and what level it's at
+create table tag_allergen (
+    tag_id          bigint      not null references tag(id) on delete cascade,
+    allergen_id     bigint      not null references allergen(id) on delete cascade,
+    level           text        not null check (level in ('contains', 'may contain')), --assuming 'contains' and 'may contain' are the best ways to check this
+    is_unsure       boolean     not null default false,
+    primary key (tag_id, allergen_id)
+);
+
 create table recipe (
     id  bigint generated always as identity primary key,
     title   text not null,
