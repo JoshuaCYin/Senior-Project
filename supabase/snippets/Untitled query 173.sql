@@ -1,0 +1,108 @@
+-- ======= Prototype recipes =======
+
+-- 'on conflict' skips ingredients that already exist (egg, flour, banana, rice)
+insert into ingredient (name) values
+  ('butter'), ('bread'), ('pasta'), ('peanut butter'), ('soy sauce'), ('sesame oil'),
+  ('garlic'), ('green onion'), ('chicken breast'), ('frozen peas'), ('carrot'),
+  ('vegetable oil'), ('canned tomatoes'), ('olive oil'), ('parmesan'), ('salmon'),
+  ('potato'), ('broccoli'), ('lemon'), ('shrimp'), ('corn tortillas'), ('cabbage'),
+  ('lime'), ('mayonnaise'), ('black beans'), ('corn'), ('salsa'), ('avocado'),
+  ('rolled oats'), ('milk'), ('almonds'),
+  ('egg'), ('flour'), ('banana'), ('rice')
+on conflict (name) do nothing;
+
+-- one line per ingredient, unnest splits the array into rows.
+-- ingredients with no allergens are just left out.
+insert into ingredient_allergen (ingredient_id, allergen_id)
+select i.id, a.id
+from (values
+  ('flour',         array['wheat', 'gluten']),  -- fixes the old seed, which had wheat only
+  ('butter',        array['milk']),
+  ('bread',         array['wheat', 'gluten']),
+  ('pasta',         array['wheat', 'gluten']),
+  ('peanut butter', array['peanut']),
+  ('soy sauce',     array['soy', 'wheat', 'gluten']),
+  ('sesame oil',    array['sesame']),
+  ('parmesan',      array['milk']),
+  ('salmon',        array['fish']),
+  ('shrimp',        array['shellfish']),
+  ('mayonnaise',    array['egg']),
+  ('milk',          array['milk']),
+  ('almonds',       array['tree nuts']),
+  ('rolled oats',   array['gluten'])  -- really "may contain", but this table has no level
+) as x(ingredient, allergens)
+cross join lateral unnest(x.allergens) as t(allergen)
+join ingredient i on i.name = x.ingredient
+join allergen a   on a.name = t.allergen
+on conflict do nothing;
+
+insert into recipe (title) values
+  ('Scrambled eggs on toast'),
+  ('Peanut noodles'),
+  ('Chicken fried rice'),
+  ('Pasta with tomato sauce'),
+  ('Baked salmon with potatoes and broccoli'),
+  ('Shrimp tacos'),
+  ('Black bean and rice bowl'),
+  ('Oatmeal with banana and almonds'),
+  ('Roast chicken and vegetables');
+
+insert into recipe_ingredient (recipe_id, ingredient_id, amount)
+select r.id, i.id, x.amount
+from (values
+  ('Scrambled eggs on toast', 'egg',    '3'),
+  ('Scrambled eggs on toast', 'butter', '1 tbsp'),
+  ('Scrambled eggs on toast', 'bread',  '2 slices'),
+
+  ('Peanut noodles', 'pasta',         '8 oz'),
+  ('Peanut noodles', 'peanut butter', '1/4 cup'),
+  ('Peanut noodles', 'soy sauce',     '2 tbsp'),
+  ('Peanut noodles', 'sesame oil',    '1 tbsp'),
+  ('Peanut noodles', 'garlic',        '2 cloves'),
+  ('Peanut noodles', 'green onion',   '2'),
+
+  ('Chicken fried rice', 'rice',           '2 cups cooked'),
+  ('Chicken fried rice', 'egg',            '2'),
+  ('Chicken fried rice', 'chicken breast', '1'),
+  ('Chicken fried rice', 'soy sauce',      '2 tbsp'),
+  ('Chicken fried rice', 'frozen peas',    '1/2 cup'),
+  ('Chicken fried rice', 'carrot',         '1'),
+  ('Chicken fried rice', 'vegetable oil',  '1 tbsp'),
+
+  ('Pasta with tomato sauce', 'pasta',           '8 oz'),
+  ('Pasta with tomato sauce', 'canned tomatoes', '1 can'),
+  ('Pasta with tomato sauce', 'garlic',          '2 cloves'),
+  ('Pasta with tomato sauce', 'olive oil',       '2 tbsp'),
+  ('Pasta with tomato sauce', 'parmesan',        '1/4 cup'),
+
+  ('Baked salmon with potatoes and broccoli', 'salmon',    '2 fillets'),
+  ('Baked salmon with potatoes and broccoli', 'potato',    '2'),
+  ('Baked salmon with potatoes and broccoli', 'broccoli',  '1 head'),
+  ('Baked salmon with potatoes and broccoli', 'olive oil', '2 tbsp'),
+  ('Baked salmon with potatoes and broccoli', 'lemon',     '1'),
+
+  ('Shrimp tacos', 'shrimp',         '1/2 lb'),
+  ('Shrimp tacos', 'corn tortillas', '6'),
+  ('Shrimp tacos', 'cabbage',        '1 cup shredded'),
+  ('Shrimp tacos', 'lime',           '1'),
+  ('Shrimp tacos', 'mayonnaise',     '2 tbsp'),
+
+  ('Black bean and rice bowl', 'rice',        '1 cup'),
+  ('Black bean and rice bowl', 'black beans', '1 can'),
+  ('Black bean and rice bowl', 'corn',        '1/2 cup'),
+  ('Black bean and rice bowl', 'salsa',       '1/4 cup'),
+  ('Black bean and rice bowl', 'avocado',     '1'),
+  ('Black bean and rice bowl', 'lime',        '1'),
+
+  ('Oatmeal with banana and almonds', 'rolled oats', '1/2 cup'),
+  ('Oatmeal with banana and almonds', 'milk',        '1 cup'),
+  ('Oatmeal with banana and almonds', 'banana',      '1'),
+  ('Oatmeal with banana and almonds', 'almonds',     '2 tbsp'),
+
+  ('Roast chicken and vegetables', 'chicken breast', '2'),
+  ('Roast chicken and vegetables', 'potato',         '2'),
+  ('Roast chicken and vegetables', 'carrot',         '2'),
+  ('Roast chicken and vegetables', 'olive oil',      '2 tbsp')
+) as x(recipe, ingredient, amount)
+join recipe r     on r.title = x.recipe
+join ingredient i on i.name = x.ingredient;

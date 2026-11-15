@@ -20,3 +20,7 @@
 - Show "no allergen found", not "safe": some products have missing or messy ingredient data.
 - Let users choose if refined oils count: for now peanut oil always counts as peanut.
 - Let users avoid a specific ingredient: for things that aren't one of the main allergens, like coconut, mustard or cilantro. The app would check product tags directly against the tag table.
+
+## Plan prototype (Sprint 5)
+
+- Build the plan prototype: follow docs/tutorial-prototype.md (data, safe candidate queries, scoring, plan, tests).
