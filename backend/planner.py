@@ -150,7 +150,7 @@ def pantry_match(candidate, pantry):
     have = sum(1 for i in candidate["ingredients"] if i.lower() in pantry)
     return have / len(candidate["ingredients"])
 
-# master function: score: add a score to each item on the candidate list
+# add a score to each item on the candidate list
 def score(candidate, pantry):
     candidate["confidence"] = confidence(candidate) # add a confidence value to the candidate item
     candidate["pantry_match"] = pantry_match(candidate, pantry)
@@ -196,7 +196,7 @@ def build_plan(candidate_list, slot_choices, days = 1):
         "fallbacks": fallbacks
     }
 
-# master function: create a complete plan for the specified number of days and user's allergens
+# create a complete plan for the specified number of days and user's allergens
 def make_plan(conn, profile, days = 1):
     candidates = fetch_candidates(conn, profile["allergens"])
     pantry = {p.lower() for p in profile["pantry"]}
@@ -205,7 +205,7 @@ def make_plan(conn, profile, days = 1):
     return build_plan(candidates, profile.get("slots", {}), days)
 
 def print_plan(profile, plan):
-    print(f"\n======= {profile['name']} (avoids: {', '.join(profile['allergens']) or 'nothing'}) =======")
+    print(f"\n======= {profile['name']} (avoids: {', '.join(profile['allergens']) or 'nothing'}) Preferences: {', '.join([profile['slots']['breakfast'], profile['slots']['lunch'], profile['slots']['dinner']])} =======")
     for slot in plan["slots"]:
         item = slot["item"]
         if item:
